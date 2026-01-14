@@ -152,14 +152,14 @@ export default function Home() {
               </p>
 
               <div className="mt-6 grid gap-2 text-sm text-zinc-700">
-                <div>Telefon/WhatsApp: +40 XXX XXX XXX</div>
+                <div>Telefon/WhatsApp: +40 727 608 654</div>
                 <div>Email: contact@terahaus.ro</div>
               </div>
 
               <div className="mt-6 flex gap-3">
                 <a
                   className="rounded-2xl border border-zinc-200 bg-white px-6 py-3 text-sm font-medium hover:bg-zinc-50"
-                  href="https://wa.me/40700000000"
+                  href="https://wa.me/40727608654"
                 >
                   WhatsApp
                 </a>
