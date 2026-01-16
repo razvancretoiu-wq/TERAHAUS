@@ -4,7 +4,13 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="min-h-screen bg-white text-zinc-900">
-      <header className="sticky top-0 z-50 border-b border-zinc-200/70 bg-white/80 backdrop-blur">
+      <a
+  href="https://wa.me/40727608654"
+  className="fixed bottom-5 right-5 z-50 rounded-full border border-zinc-200 bg-white px-5 py-3 text-sm font-medium shadow-lg hover:bg-zinc-50"
+>
+  WhatsApp
+</a>
+<header className="sticky top-0 z-50 border-b border-zinc-200/70 bg-white/80 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
           <Link href="/" className="flex items-center gap-2">
             <div className="h-9 w-9 rounded-xl border border-zinc-200 bg-zinc-50" />
@@ -153,7 +159,7 @@ export default function Home() {
 
               <div className="mt-6 grid gap-2 text-sm text-zinc-700">
                 <div>Telefon/WhatsApp: +40 727 608 654</div>
-                <div>Email: contact@terahaus.ro</div>
+                <div>Email: razvancretoiu@gmail.com</div>
               </div>
 
               <div className="mt-6 flex gap-3">
@@ -165,7 +171,7 @@ export default function Home() {
                 </a>
                 <a
                   className="rounded-2xl bg-zinc-900 px-6 py-3 text-sm font-medium text-white hover:bg-zinc-800"
-                  href="mailto:contact@terahaus.ro"
+                  href="mailto:razvancretoiu@gmail.com"
                 >
                   Email
                 </a>
@@ -173,40 +179,60 @@ export default function Home() {
             </div>
 
             <form
-              className="rounded-3xl border border-zinc-200 bg-white p-7"
-              onSubmit={(e) => {
-                e.preventDefault();
-                alert("Formular demo. Următorul pas: trimitere automată pe email.");
-              }}
-            >
+  		action="https://formspree.io/f/xykkkgjk"
+ 		 method="POST"
+ 		 encType="multipart/form-data"
+ 		 className="rounded-3xl border border-zinc-200 bg-white p-7"
+		>
+
+
               <div className="grid gap-4">
                 <label className="grid gap-2 text-sm">
                   Nume
                   <input
-                    className="rounded-2xl border border-zinc-200 px-4 py-3 outline-none focus:ring-2 focus:ring-zinc-900/10"
-                    required
-                  />
+  			name="name"
+ 			 className="rounded-2xl border border-zinc-200 px-4 py-3 outline-none focus:ring-2 focus:ring-zinc-900/10"
+ 			 required
+			/>
+
                 </label>
+		<label className="grid gap-2 text-sm">
+ 		 Email
+ 			 <input
+  			  type="email"
+  			  name="email"
+  			  className="rounded-2xl border border-zinc-200 px-4 py-3 outline-none focus:ring-2 focus:ring-zinc-900/10"
+  			  required
+ 			 />
+		</label>
 
                 <label className="grid gap-2 text-sm">
                   Telefon (WhatsApp)
                   <input
-                    className="rounded-2xl border border-zinc-200 px-4 py-3 outline-none focus:ring-2 focus:ring-zinc-900/10"
-                    required
-                  />
+ 			 name="phone"
+  			className="rounded-2xl border border-zinc-200 px-4 py-3 outline-none focus:ring-2 focus:ring-zinc-900/10"
+ 			 required
+			/>
+
                 </label>
 
                 <label className="grid gap-2 text-sm">
                   Mesaj
                   <textarea
-                    className="min-h-[120px] rounded-2xl border border-zinc-200 px-4 py-3 outline-none focus:ring-2 focus:ring-zinc-900/10"
-                    required
-                  />
+  			name="message"
+ 			 className="min-h-[120px] rounded-2xl border border-zinc-200 px-4 py-3 outline-none focus:ring-2 focus:ring-zinc-900/10"
+ 			 required
+			/>
+
                 </label>
 
-                <button className="rounded-2xl bg-zinc-900 px-6 py-3 text-sm font-medium text-white hover:bg-zinc-800">
-                  Trimite
-                </button>
+                <button
+  			type="submit"
+  			className="rounded-2xl bg-zinc-900 px-6 py-3 text-sm font-medium text-white hover:bg-zinc-800"
+			>
+ 			 Trimite
+		</button>
+
               </div>
             </form>
           </div>
