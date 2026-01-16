@@ -21,14 +21,8 @@ export default function Home() {
             <img
   		src="/logo-terahaus.png"
  		 alt="Terahaus"
- 		 className="h-10 w-auto"
+ 		 className="h-12 w-auto"
 		/>
-
-            <div className="leading-tight">
-              <div className="text-sm font-semibold tracking-tight">TERAHAUS</div>
-              <div className="text-xs text-zinc-500">premium surfaces</div>
-            </div>
-          </Link>
 
           <div className="flex items-center gap-3">
             <Link
