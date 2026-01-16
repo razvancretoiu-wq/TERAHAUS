@@ -1,7 +1,12 @@
 "use client";
 import Link from "next/link";
+import { useState } from "react";
+
 
 export default function Home() {
+	const [sent, setSent] = useState(false);
+	const [loading, setLoading] = useState(false);
+
   return (
     <main className="min-h-screen bg-white text-zinc-900">
       <a
@@ -179,11 +184,31 @@ export default function Home() {
             </div>
 
             <form
-  		action="https://formspree.io/f/xykkkgjk"
- 		 method="POST"
- 		 encType="multipart/form-data"
- 		 className="rounded-3xl border border-zinc-200 bg-white p-7"
+ 		 onSubmit={async (e) => {
+   		 e.preventDefault();
+   		 setLoading(true);
+
+   		 const form = e.currentTarget;
+   		 const data = new FormData(form);
+
+   		 const response = await fetch("https://formspree.io/f/xykkkgjk", {
+     		 method: "POST",
+     		 body: data,
+     		 headers: {
+      		  Accept: "application/json",
+     		 },
+   		 });
+
+  		  if (response.ok) {
+   		   setSent(true);
+   		   form.reset();
+  		  }
+
+  		  setLoading(false);
+		  }}
+		  className="rounded-3xl border border-zinc-200 bg-white p-7"
 		>
+
 
 
               <div className="grid gap-4">
@@ -226,12 +251,21 @@ export default function Home() {
 
                 </label>
 
-                <button
-  			type="submit"
-  			className="rounded-2xl bg-zinc-900 px-6 py-3 text-sm font-medium text-white hover:bg-zinc-800"
-			>
- 			 Trimite
-		</button>
+                {sent ? (
+ 		 <div className="rounded-2xl border border-green-200 bg-green-50 px-6 py-4 text-sm text-green-700">
+ 		   Mulțumim! Mesajul a fost trimis cu succes. Te vom contacta în cel mai scurt timp.
+ 		 </div>
+		) : (
+		  <button
+  		  type="submit"
+  		  disabled={loading}
+  		  className="rounded-2xl bg-zinc-900 px-6 py-3 text-sm font-medium text-white hover:bg-zinc-800 disabled:opacity-60"
+ 		 >
+  		  {loading ? "Se trimite..." : "Trimite"}
+ 		 </button>
+		)}
+
+
 
               </div>
             </form>
