@@ -18,7 +18,12 @@ export default function Home() {
 <header className="sticky top-0 z-50 border-b border-zinc-200/70 bg-white/80 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
           <Link href="/" className="flex items-center gap-2">
-            <div className="h-9 w-9 rounded-xl border border-zinc-200 bg-zinc-50" />
+            <img
+  		src="/logo-terahaus.png"
+ 		 alt="Terahaus"
+ 		 className="h-10 w-auto"
+		/>
+
             <div className="leading-tight">
               <div className="text-sm font-semibold tracking-tight">TERAHAUS</div>
               <div className="text-xs text-zinc-500">premium surfaces</div>
