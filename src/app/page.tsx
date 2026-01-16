@@ -16,30 +16,37 @@ export default function Home() {
   WhatsApp
 </a>
 <header className="sticky top-0 z-50 border-b border-zinc-200/70 bg-white/80 backdrop-blur">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
-          <Link href="/" className="flex items-center gap-2">
-            <img
-  		src="/logo-terahaus.png"
- 		 alt="Terahaus"
- 		 className="h-12 w-auto"
-		/>
+  <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
+    
+    {/* LOGO */}
+    <Link href="/" className="flex items-center">
+      <img
+        src="/logo-terahaus.png"
+        alt="Terahaus"
+        className="h-12 w-auto"
+      />
+    </Link>
 
-          <div className="flex items-center gap-3">
-            <Link
-              href="#proiecte"
-              className="hidden text-sm text-zinc-700 hover:text-zinc-900 md:inline"
-            >
-              Proiecte
-            </Link>
-            <Link
-              href="#contact"
-              className="rounded-xl bg-zinc-900 px-4 py-2 text-sm font-medium text-white hover:bg-zinc-800"
-            >
-              Cere ofertă
-            </Link>
-          </div>
-        </div>
-      </header>
+    {/* MENIU */}
+    <div className="flex items-center gap-3">
+      <Link
+        href="#proiecte"
+        className="hidden text-sm text-zinc-700 hover:text-zinc-900 md:inline"
+      >
+        Proiecte
+      </Link>
+
+      <Link
+        href="#contact"
+        className="rounded-xl bg-zinc-900 px-4 py-2 text-sm font-medium text-white hover:bg-zinc-800"
+      >
+        Cere ofertă
+      </Link>
+    </div>
+
+  </div>
+</header>
+
 
       {/* HERO */}
       <section className="relative overflow-hidden">
