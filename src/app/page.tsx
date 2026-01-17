@@ -55,7 +55,7 @@ export default function Home() {
           <div className="grid items-center gap-10 md:grid-cols-2">
             <div>
               <p className="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-zinc-50 px-4 py-2 text-xs text-zinc-600">
-                Riflăje WPC • Decking • Placări • Accesorii
+                Riflaje WPC • Interior • Exterior • Accesorii
               </p>
 
               <h1 className="mt-5 text-4xl font-semibold tracking-tight md:text-5xl">
