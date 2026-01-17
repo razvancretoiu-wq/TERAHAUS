@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -99,9 +100,20 @@ export default function Home() {
 
             {/* Placeholder imagine (înlocuim cu poze reale) */}
             <div className="relative">
-              <div className="aspect-[4/5] w-full rounded-3xl border border-zinc-200 bg-gradient-to-b from-zinc-50 to-zinc-100" />
-              <div className="pointer-events-none absolute inset-0 rounded-3xl shadow-[0_30px_80px_rgba(0,0,0,0.12)]" />
-            </div>
+ 		 <div className="relative aspect-[4/5] w-full overflow-hidden rounded-3xl border border-zinc-200">
+  		  <Image
+    		  src="/hero.jpg"
+    		  alt="Terahaus - riflaje WPC, decking și placări premium pentru interior și exterior"
+     		 fill
+    		  priority
+     		 className="object-cover"
+    		  sizes="(max-width: 768px) 100vw, 520px"
+   		 />
+	  </div>
+
+  <div className="pointer-events-none absolute inset-0 rounded-3xl shadow-[0_30px_80px_rgba(0,0,0,0.12)]" />
+</div>
+
           </div>
         </div>
       </section>
