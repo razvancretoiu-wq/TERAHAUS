@@ -81,20 +81,23 @@ export default function Home() {
                 </Link>
               </div>
 
-              <div className="mt-10 grid grid-cols-3 gap-4 text-sm text-zinc-600">
-                <div className="rounded-2xl border border-zinc-200 bg-white p-4">
-                  <div className="text-xl font-semibold text-zinc-900">Durabil</div>
-                  <div>rezistență în timp</div>
-                </div>
-                <div className="rounded-2xl border border-zinc-200 bg-white p-4">
-                  <div className="text-xl font-semibold text-zinc-900">Funcțional</div>
-                  <div>soluții eficiente</div>
-                </div>
-                <div className="rounded-2xl border border-zinc-200 bg-white p-4">
-                  <div className="text-xl font-semibold text-zinc-900">Estetic natural</div>
-                  <div>design contemporan</div>
-                </div>
-              </div>
+              <div className="mt-10 grid grid-cols-1 gap-4 text-sm text-zinc-600 sm:grid-cols-3">
+ 		 <div className="min-w-0 rounded-2xl border border-zinc-200 bg-white p-4">
+   		 <div className="text-lg font-semibold text-zinc-900 sm:text-xl">Durabil</div>
+    		<div className="break-words">rezistență în timp</div>
+ 		 </div>
+
+ 		 <div className="min-w-0 rounded-2xl border border-zinc-200 bg-white p-4">
+  		  <div className="text-lg font-semibold text-zinc-900 sm:text-xl">Funcțional</div>
+   		 <div className="break-words">soluții eficiente</div>
+		  </div>
+
+ 		 <div className="min-w-0 rounded-2xl border border-zinc-200 bg-white p-4">
+  		  <div className="text-lg font-semibold text-zinc-900 sm:text-xl">Estetic natural</div>
+  		  <div className="break-words">design contemporan</div>
+ 		 </div>
+		</div>
+
             </div>
 
             {/* Placeholder imagine (înlocuim cu poze reale) */}
