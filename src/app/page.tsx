@@ -31,10 +31,10 @@ export default function Home() {
     {/* MENIU */}
     <div className="flex items-center gap-3">
       <Link
-        href="#proiecte"
+        href="#produse"
         className="hidden text-sm text-zinc-700 hover:text-zinc-900 md:inline"
       >
-        Proiecte
+        Produse
       </Link>
 
       <Link
@@ -63,8 +63,7 @@ export default function Home() {
               </h1>
 
               <p className="mt-4 text-base text-zinc-600 md:text-lg">
-                Terahaus livrează materiale și soluții premium pentru pereți, fațade
-                și terase — cu consultanță, ofertare și montaj.
+                Terahaus livrează materiale și soluții premium pentru pereți, fațade și terase, cu consultanță specializată și ofertare rapidă.
               </p>
 
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -75,10 +74,10 @@ export default function Home() {
                   Cere ofertă
                 </Link>
                 <Link
-                  href="#proiecte"
+                  href="#produse"
                   className="rounded-2xl border border-zinc-200 bg-white px-6 py-3 text-sm font-medium text-zinc-900 hover:bg-zinc-50"
                 >
-                  Vezi proiecte
+                  Vezi produse
                 </Link>
               </div>
 
@@ -144,8 +143,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* PROIECTE */}
-      <section id="proiecte">
+      {/* PRODUSE */}
+      <section id="produse">
         <div className="mx-auto max-w-6xl px-4 py-16">
           <h2 className="text-2xl font-semibold tracking-tight">Proiecte</h2>
           <p className="mt-2 text-zinc-600">
