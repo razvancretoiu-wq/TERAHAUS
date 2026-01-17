@@ -146,7 +146,7 @@ export default function Home() {
       {/* PRODUSE */}
       <section id="produse">
         <div className="mx-auto max-w-6xl px-4 py-16">
-          <h2 className="text-2xl font-semibold tracking-tight">Proiecte</h2>
+          <h2 className="text-2xl font-semibold tracking-tight">Produse</h2>
           <p className="mt-2 text-zinc-600">
             Înlocuim aceste placeholder-e cu pozele tale reale.
           </p>
