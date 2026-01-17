@@ -84,15 +84,15 @@ export default function Home() {
               <div className="mt-10 grid grid-cols-3 gap-4 text-sm text-zinc-600">
                 <div className="rounded-2xl border border-zinc-200 bg-white p-4">
                   <div className="text-xl font-semibold text-zinc-900">Durabil</div>
-                  <div>rezistență îndelungată</div>
+                  <div>rezistență în timp</div>
                 </div>
                 <div className="rounded-2xl border border-zinc-200 bg-white p-4">
                   <div className="text-xl font-semibold text-zinc-900">Funcțional</div>
-                  <div>soluție practică</div>
+                  <div>soluții eficiente</div>
                 </div>
                 <div className="rounded-2xl border border-zinc-200 bg-white p-4">
                   <div className="text-xl font-semibold text-zinc-900">Estetic natural</div>
-                  <div>design modern</div>
+                  <div>design contemporan</div>
                 </div>
               </div>
             </div>
