@@ -61,8 +61,9 @@ export default function Footer() {
         <div className="border-t mt-16 pt-6 text-sm text-gray-500 flex flex-col md:flex-row justify-between gap-4">
           <p>© {new Date().getFullYear()} TERAHAUS. Toate drepturile rezervate.</p>
 <p className="text-xs text-gray-400">
-  Build: {process.env.VERCEL_GIT_COMMIT_SHA?.slice(0, 7) ?? "local"}
+  Build: {String(process.env.VERCEL_GIT_COMMIT_SHA || "").slice(0, 7) || "prod"}
 </p>
+
           <p>Website dezvoltat cu Next.js</p>
         </div>
 
