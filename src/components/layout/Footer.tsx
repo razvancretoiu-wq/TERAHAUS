@@ -19,7 +19,7 @@ export default function Footer() {
 
           {/* Produse */}
           <div>
-            <h4 className="font-semibold mb-4">Produse</h4>
+            <h4 className="font-semibold mb-4">PRODUSE</h4>
             <ul className="space-y-2 text-sm text-gray-600">
               <li><Link href="/produse?cat=riflaje" className="hover:text-black">Riflaje WPC</Link></li>
               <li><Link href="/produse?cat=deck" className="hover:text-black">Deck WPC</Link></li>
@@ -33,15 +33,15 @@ export default function Footer() {
             <h4 className="font-semibold mb-4">LINKURI RAPIDE</h4>
             <ul className="space-y-2 text-sm text-gray-600">
               <li><Link href="/" className="hover:text-black">Acasă</Link></li>
-              <li><Link href="/produse" className="hover:text-black">PRODUSE</Link></li>
-              <li><Link href="/contact" className="hover:text-black">CONTACT</Link></li>
+              <li><Link href="/produse" className="hover:text-black">Produse</Link></li>
+              <li><Link href="/contact" className="hover:text-black">Contact</Link></li>
               <li><Link href="#" className="hover:text-black">Termeni și condiții</Link></li>
             </ul>
           </div>
 
           {/* Contact */}
           <div>
-            <h4 className="font-semibold mb-4">Contact</h4>
+            <h4 className="font-semibold mb-4">CONTACT</h4>
             <ul className="space-y-2 text-sm text-gray-600">
               <li>Telefon: <a href="tel:+40727608654" className="hover:text-black">+40 727 608 654</a></li>
               <li>Email: <a href="mailto:contact@terahaus.ro" className="hover:text-black">contact@terahaus.ro</a></li>
