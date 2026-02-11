@@ -30,11 +30,11 @@ export default function Footer() {
 
           {/* Linkuri rapide */}
           <div>
-            <h4 className="font-semibold mb-4">Linkuri rapide</h4>
+            <h4 className="font-semibold mb-4">LINKURI RAPIDE</h4>
             <ul className="space-y-2 text-sm text-gray-600">
               <li><Link href="/" className="hover:text-black">Acasă</Link></li>
-              <li><Link href="/produse" className="hover:text-black">Produse</Link></li>
-              <li><Link href="/contact" className="hover:text-black">Contact</Link></li>
+              <li><Link href="/produse" className="hover:text-black">PRODUSE</Link></li>
+              <li><Link href="/contact" className="hover:text-black">CONTACT</Link></li>
               <li><Link href="#" className="hover:text-black">Termeni și condiții</Link></li>
             </ul>
           </div>
@@ -60,9 +60,6 @@ export default function Footer() {
         {/* Bottom */}
         <div className="border-t mt-16 pt-6 text-sm text-gray-500 flex flex-col md:flex-row justify-between gap-4">
           <p>© {new Date().getFullYear()} TERAHAUS. Toate drepturile rezervate.</p>
-<p className="text-xs text-gray-400">
-  Build: {String(process.env.VERCEL_GIT_COMMIT_SHA || "").slice(0, 7) || "prod"}
-</p>
 
           <p>Website dezvoltat cu Next.js</p>
         </div>

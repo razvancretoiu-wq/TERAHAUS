@@ -20,10 +20,11 @@ export default function HeroSlider() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="heading-serif text-5xl md:text-6xl font-semibold mb-6"
+          className="heading-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold mb-6 leading-tight"
         >
-          Finisaje premium pentru
-          <br /> spații care arată impecabil
+          Finisaje premium<br className="hidden sm:block" />
+ pentru spații care arată impecabil
+
         </motion.h1>
 
         <motion.p
@@ -33,7 +34,6 @@ export default function HeroSlider() {
           className="text-lg md:text-xl text-white/85 mb-8 max-w-2xl leading-relaxed"
         >
           Riflaje, deck, fațade și soluții complete pentru interior și exterior.
-          Livrare rapidă și consultanță pentru alegerea produsului potrivit.
         </motion.p>
 
         <motion.div
