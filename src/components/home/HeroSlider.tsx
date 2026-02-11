@@ -22,8 +22,8 @@ export default function HeroSlider() {
           transition={{ duration: 0.8 }}
           className="heading-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold mb-6 leading-tight"
         >
-          Finisaje premium<br className="hidden sm:block" />
- pentru spații care arată impecabil
+          Finisaje premium <br className="hidden sm:block" />
+  pentru spații care arată impecabil
 
         </motion.h1>
 
