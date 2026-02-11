@@ -4,13 +4,21 @@ import "./globals.css";
 import Header from "@/components/layout/Header"
 import Footer from "@/components/layout/Footer"
 import WhatsAppFloating from "@/components/layout/WhatsAppFloating"
-import { Poppins } from "next/font/google"
+import { Poppins, Playfair_Display } from "next/font/google"
 
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
   display: "swap",
 })
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
+  variable: "--font-playfair",
+})
+
 
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
@@ -30,7 +38,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ro" className={`${inter.variable} ${playfair.variable}`}>
-     <body className={poppins.className}>
+     <body className={`${poppins.className} ${playfair.variable}`}>
  	<Header />
 	{children}
 	<Footer />
