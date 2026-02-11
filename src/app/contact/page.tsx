@@ -26,7 +26,7 @@ export default function ContactPage() {
 
             <div>
               <p className="text-sm text-gray-500">Telefon</p>
-              <a href="tel:+40700000000" className="text-lg font-medium">
+              <a href="tel:+40727608654" className="text-lg font-medium">
                 +40 700 000 000
               </a>
             </div>
