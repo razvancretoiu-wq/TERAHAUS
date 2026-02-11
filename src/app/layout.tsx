@@ -1,36 +1,27 @@
 import type { Metadata } from "next";
+import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
+
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair" });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://terahaus.ro"),
-  title: "Terahaus | Riflaje WPC, Decking și Placări Premium pentru Interior & Exterior",
+  title: "Terahaus | Riflaje WPC, Placări Premium Interior & Exterior",
   description:
-    "Terahaus oferă riflaje WPC, decking și placări premium pentru interior și exterior. Durabil. Funcțional. Estetic. Natural. Consultanță, ofertare și montaj în România.",
-  openGraph: {
-    type: "website",
-    url: "https://terahaus.ro",
-    title: "Terahaus | Interior & Exterior",
-    description:
-      "Riflaje WPC, decking și placări premium. Durabil. Funcțional. Estetic. Natural.",
-    siteName: "Terahaus",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Terahaus | Interior & Exterior",
-    description:
-      "Riflaje WPC, decking și placări premium. Durabil. Funcțional. Estetic. Natural.",
+    "Riflaje WPC, placări premium pentru interior și exterior. Consultanță, ofertare și montaj în România.",
+  icons: {
+    icon: [{ url: "/favicon.ico" }],
+    apple: [{ url: "/apple-touch-icon.png" }],
   },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{ children: React.ReactNode }>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="ro">
+    <html lang="ro" className={`${inter.variable} ${playfair.variable}`}>
       <body className="min-h-screen bg-white text-zinc-900 antialiased">
         {children}
       </body>
     </html>
   );
 }
-
