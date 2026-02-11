@@ -5,7 +5,7 @@ import Image from "next/image"
 
 export default function HeroSlider() {
   return (
-    <section className="relative h-[85vh] mt-24 flex items-center bg-black text-white">
+    <section className="relative h-[85vh] flex items-center bg-black text-white">
       <Image
         src="/hero-terahaus.jpg"
         alt="TERAHAUS WPC"
