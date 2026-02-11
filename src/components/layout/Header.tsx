@@ -52,12 +52,7 @@ export default function Header() {
         </nav>
 
         {/* CTA */}
-        <a
-          href="https://wa.me/407272608654"
-          className="bg-[#111111] hover:bg-black transition text-white px-5 py-2 text-sm uppercase tracking-wider"
-        >
-          WhatsApp
-        </a>
+      
       </div>
     </header>
   )
