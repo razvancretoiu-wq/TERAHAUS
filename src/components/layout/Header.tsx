@@ -21,9 +21,18 @@ export default function Header() {
 
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-        <Link href="/" className="text-2xl font-semibold tracking-wide">
-          TERAHAUS
-        </Link>
+        import Image from "next/image"
+	<Link href="/" className="flex items-center">
+  <Image
+    src="/logo-terahaus.png"
+    alt="TERAHAUS Logo"
+    width={160}
+    height={40}
+    priority
+    className="object-contain"
+  />
+</Link>
+
 
         <nav className="hidden md:flex gap-8 text-sm uppercase tracking-wider text-gray-800">
           <Link href="/produse" className="hover:text-black transition">Produse</Link>
