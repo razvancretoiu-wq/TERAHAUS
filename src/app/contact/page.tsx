@@ -27,7 +27,7 @@ export default function ContactPage() {
             <div>
               <p className="text-sm text-gray-500">Telefon</p>
               <a href="tel:+40727608654" className="text-lg font-medium">
-                +40 700 000 000
+                +40 727 608 654
               </a>
             </div>
 
