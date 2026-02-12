@@ -11,7 +11,7 @@ export default function BenefitsBar() {
             <MessageCircle className="h-7 w-7 text-black" />
           </div>
           <div>
-            <p className="font-semibold text-black tracking-wide uppercase">
+            <p className="font-semibold text-black">
               Consultanță Gratuită
             </p>
             <p className="text-sm text-gray-500 mt-1">
@@ -26,7 +26,7 @@ export default function BenefitsBar() {
             <ShieldCheck className="h-7 w-7 text-black" />
           </div>
           <div>
-            <p className="font-semibold text-black tracking-wide uppercase">
+            <p className="font-semibold text-black">
               Durabilitate Garantată
             </p>
             <p className="text-sm text-gray-500 mt-1">
@@ -41,7 +41,7 @@ export default function BenefitsBar() {
             <Award className="h-7 w-7 text-black" />
           </div>
           <div>
-            <p className="font-semibold text-black tracking-wide uppercase">
+            <p className="font-semibold text-black">
               Standard European Garantat
             </p>
             <p className="text-sm text-gray-500 mt-1">
