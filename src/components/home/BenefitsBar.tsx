@@ -42,10 +42,10 @@ export default function BenefitsBar() {
           </div>
           <div>
             <p className="font-semibold text-black">
-              Standard European Garantat
+              Calitate Certificată
             </p>
             <p className="text-sm text-gray-500 mt-1">
-              Finisaj premium, rezistență în timp
+              Standard european, finisaj premium
             </p>
           </div>
         </div>
