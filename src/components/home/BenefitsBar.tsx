@@ -1,37 +1,52 @@
-import { Truck, MessageCircle, PackageOpen } from "lucide-react"
+import { MessageCircle, ShieldCheck, Award } from "lucide-react"
 
 export default function BenefitsBar() {
   return (
-    <section className="py-14 border-t border-b bg-white">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
+    <section className="py-16 border-t border-b bg-white">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
 
-        <div className="flex items-center gap-4">
-          <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-black/5">
-            <Truck className="h-6 w-6 text-black" />
+        {/* 1 */}
+        <div className="flex items-start gap-5">
+          <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-black/5">
+            <MessageCircle className="h-7 w-7 text-black" />
           </div>
           <div>
-            <p className="font-semibold text-black">Livrare Rapidă</p>
-            <p className="text-sm text-gray-500">Oriunde în România</p>
+            <p className="font-semibold text-black tracking-wide uppercase">
+              CONSULTANȚĂ GRATUITĂ
+            </p>
+            <p className="text-sm text-gray-500 mt-1">
+              Te ajutăm să alegi corect
+            </p>
           </div>
         </div>
 
-        <div className="flex items-center gap-4">
-          <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-black/5">
-            <MessageCircle className="h-6 w-6 text-black" />
+        {/* 2 */}
+        <div className="flex items-start gap-5">
+          <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-black/5">
+            <ShieldCheck className="h-7 w-7 text-black" />
           </div>
           <div>
-            <p className="font-semibold text-black">Consultanță Gratuită</p>
-            <p className="text-sm text-gray-500">Alegem soluția potrivită</p>
+            <p className="font-semibold text-black tracking-wide uppercase">
+              DURABILITATE GARANTATĂ
+            </p>
+            <p className="text-sm text-gray-500 mt-1">
+              Materiale WPC rezistente în timp
+            </p>
           </div>
         </div>
 
-        <div className="flex items-center gap-4">
-          <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-black/5">
-            <PackageOpen className="h-6 w-6 text-black" />
+        {/* 3 */}
+        <div className="flex items-start gap-5">
+          <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-black/5">
+            <Award className="h-7 w-7 text-black" />
           </div>
           <div>
-            <p className="font-semibold text-black">Mostre Disponibile</p>
-            <p className="text-sm text-gray-500">Vezi produsul real</p>
+            <p className="font-semibold text-black tracking-wide uppercase">
+              STANDARD EUROPEAN GARANTAT
+            </p>
+            <p className="text-sm text-gray-500 mt-1">
+              Finisaj premium, rezistență în timp
+            </p>
           </div>
         </div>
 
