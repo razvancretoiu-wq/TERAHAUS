@@ -12,7 +12,7 @@ export default function BenefitsBar() {
           </div>
           <div>
             <p className="font-semibold text-black tracking-wide uppercase">
-              CONSULTANȚĂ GRATUITĂ
+              Consultanță Gratuită
             </p>
             <p className="text-sm text-gray-500 mt-1">
               Te ajutăm să alegi corect
@@ -27,7 +27,7 @@ export default function BenefitsBar() {
           </div>
           <div>
             <p className="font-semibold text-black tracking-wide uppercase">
-              DURABILITATE GARANTATĂ
+              Durabilitate Garantată
             </p>
             <p className="text-sm text-gray-500 mt-1">
               Materiale WPC rezistente în timp
@@ -42,7 +42,7 @@ export default function BenefitsBar() {
           </div>
           <div>
             <p className="font-semibold text-black tracking-wide uppercase">
-              STANDARD EUROPEAN GARANTAT
+              Standard European Garantat
             </p>
             <p className="text-sm text-gray-500 mt-1">
               Finisaj premium, rezistență în timp
