@@ -11,7 +11,7 @@ export default function HeroSlider() {
         src="/hero-terahaus.jpg"
         alt="TERAHAUS WPC"
         fill
-        className="object-cover opacity-60"
+        className="object-cover object-left md:object-center opacity-60"
         priority
       />
 
