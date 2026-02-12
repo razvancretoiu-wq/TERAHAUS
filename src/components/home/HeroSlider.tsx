@@ -15,7 +15,7 @@ export default function HeroSlider() {
         priority
       />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 text-left md:text-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 text-left md:text-left">
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
