@@ -27,7 +27,7 @@ export default async function ProductPage({
   return (
     <main className="pt-32 pb-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-sm text-gray-500 mb-6">
+        <div className="mb-6 text-sm text-gray-500">
           <Link href="/" className="hover:underline">Acasă</Link> {" / "}
           <Link href="/produse" className="hover:underline">Produse</Link> {" / "}
           <Link href={`/produse?cat=${product.category}`} className="hover:underline">
@@ -37,14 +37,14 @@ export default async function ProductPage({
           <span className="text-gray-800">{product.title}</span>
         </div>
 
-        <div className="grid gap-10 lg:grid-cols-[1.15fr_0.85fr]">
-          <div className="overflow-hidden rounded-2xl bg-white">
-            <div className="relative h-[420px] sm:h-[520px] rounded-2xl bg-white overflow-hidden">
+        <div className="grid gap-10 lg:grid-cols-[1.25fr_0.75fr] lg:items-start">
+          <div className="w-full">
+            <div className="relative w-full aspect-square rounded-2xl bg-white overflow-hidden">
               <Image
                 src={product.image}
                 alt={product.title}
                 fill
-                className="object-contain p-0"
+                className="object-cover rounded-2xl"
                 priority
               />
 
@@ -56,14 +56,15 @@ export default async function ProductPage({
             </div>
           </div>
 
-          <div>
+          <div className="lg:pt-2">
             <p className="text-sm text-gray-500">
               {categoryLabel[product.category] ?? product.category}
             </p>
 
-            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mt-2 leading-tight">
-  {product.title}
-</h1>
+            <h1 className="mt-2 text-2xl sm:text-3xl lg:text-4xl font-semibold leading-tight">
+              {product.title}
+            </h1>
+
             {product.short && (
               <p className="mt-4 text-sm sm:text-base text-gray-600 leading-relaxed">
                 {product.short}
@@ -86,14 +87,14 @@ export default async function ProductPage({
                 href={`https://wa.me/40727608654?text=${encodeURIComponent(
                   `Bună! Vreau detalii pentru: ${product.title}`
                 )}`}
-                className="bg-black text-white px-6 py-3 text-sm uppercase tracking-wider"
+                className="bg-black text-white px-6 py-3 text-xs sm:text-sm uppercase tracking-wider"
               >
                 Cere ofertă pe WhatsApp
               </a>
 
               <Link
                 href="/contact"
-                className="px-6 py-3 text-sm uppercase tracking-wider border"
+                className="px-6 py-3 text-xs sm:text-sm uppercase tracking-wider border"
               >
                 Contact
               </Link>
@@ -102,7 +103,7 @@ export default async function ProductPage({
         </div>
 
         {related.length ? (
-          <section className="mt-16">
+          <section className="mt-20">
             <div className="flex items-end justify-between gap-4 flex-wrap">
               <h2 className="text-2xl font-semibold">Produse similare</h2>
 
@@ -114,7 +115,7 @@ export default async function ProductPage({
               </Link>
             </div>
 
-            <div className="mt-6 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="mt-8 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
               {related.map((p) => (
                 <Link
                   key={p.slug}
@@ -122,12 +123,12 @@ export default async function ProductPage({
                   className="group block"
                 >
                   <div className="bg-white transition-all duration-500 hover:-translate-y-1">
-                    <div className="relative h-[520px] sm:h-[620px] lg:h-[680px] rounded-2xl bg-white overflow-hidden">
+                    <div className="relative aspect-square rounded-2xl bg-white overflow-hidden">
                       <Image
                         src={p.image}
                         alt={p.title}
                         fill
-                        className="object-contain p-0 transition-transform duration-700 group-hover:scale-105"
+                        className="object-cover rounded-2xl transition-transform duration-700 group-hover:scale-105"
                       />
                     </div>
 
