@@ -37,7 +37,7 @@ export default async function ProductPage({
           <span className="text-gray-800">{product.title}</span>
         </div>
 
-        <div className="grid gap-10 lg:grid-cols-2">
+        <div className="grid gap-10 lg:grid-cols-[1.15fr_0.85fr]">
           <div className="overflow-hidden rounded-2xl bg-white">
             <div className="relative h-[420px] sm:h-[520px] rounded-2xl bg-white overflow-hidden">
               <Image
@@ -61,10 +61,11 @@ export default async function ProductPage({
               {categoryLabel[product.category] ?? product.category}
             </p>
 
-            <h1 className="text-4xl font-semibold mt-2">{product.title}</h1>
-
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mt-2 leading-tight">
+  {product.title}
+</h1>
             {product.short && (
-              <p className="mt-5 text-gray-600 leading-relaxed">
+              <p className="mt-4 text-sm sm:text-base text-gray-600 leading-relaxed">
                 {product.short}
               </p>
             )}
@@ -121,7 +122,7 @@ export default async function ProductPage({
                   className="group block"
                 >
                   <div className="bg-white transition-all duration-500 hover:-translate-y-1">
-                    <div className="relative h-[300px] rounded-2xl bg-white overflow-hidden">
+                    <div className="relative h-[520px] sm:h-[620px] lg:h-[680px] rounded-2xl bg-white overflow-hidden">
                       <Image
                         src={p.image}
                         alt={p.title}
