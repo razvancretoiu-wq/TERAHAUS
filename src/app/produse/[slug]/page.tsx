@@ -39,14 +39,15 @@ export default async function ProductPage({
 
         <div className="grid gap-10 lg:grid-cols-[1.25fr_0.75fr] lg:items-start">
           <div className="w-full">
-            <div className="relative w-full aspect-square rounded-2xl bg-white overflow-hidden">
-              <Image
-                src={product.image}
-                alt={product.title}
-                fill
-                className="object-cover rounded-2xl"
-                priority
-              />
+            <div className="relative w-full h-[760px] rounded-2xl bg-white overflow-hidden">
+  <Image
+    src={product.image}
+    alt={product.title}
+    fill
+    className="object-contain rounded-2xl"
+    priority
+  />
+</div>
 
               {product.badge && (
                 <span className="absolute left-4 top-4 text-xs bg-black text-white px-3 py-1 rounded-full">
