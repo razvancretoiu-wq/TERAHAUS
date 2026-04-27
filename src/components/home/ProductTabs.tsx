@@ -61,12 +61,12 @@ export default function ProductTabs() {
               className="group block"
             >
               <div className="bg-white transition-all duration-500 hover:-translate-y-1">
-                <div className="relative h-[320px] rounded-2xl bg-gray-50 flex items-center justify-center overflow-hidden">
+                <div className="relative h-[360px] rounded-2xl bg-white flex items-center justify-center overflow-hidden">
                   <Image
                     src={p.image}
                     alt={p.title}
                     fill
-                    className="object-contain p-5 transition-transform duration-700 group-hover:scale-105"
+                    className="object-contain p-0 transition-transform duration-700 group-hover:scale-105"
                   />
 
                   {p.badge && (
