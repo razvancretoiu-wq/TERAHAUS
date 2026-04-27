@@ -6,9 +6,8 @@ import Image from "next/image"
 import { products } from "@/data/products"
 
 const tabs = [
-  { key: "riflaje", label: "Riflaje" },
-  { key: "deck", label: "Deck" },
-  { key: "fatade", label: "Fațade" },
+  { key: "riflaje interior", label: "Riflaje Interior" },
+  { key: "riflaje exterior", label: "Riflaje Exterior" },
   { key: "accesorii", label: "Accesorii" },
 ] as const
 
