@@ -41,12 +41,12 @@ export default async function ProductPage({
         <div className="grid gap-10 lg:grid-cols-2">
           {/* Image */}
           <div className="rounded-2xl border overflow-hidden bg-gray-50">
-            <div className="relative h-[460px]">
+            <div className="relative h-[520px]">
               <Image
                 src={product.image}
                 alt={product.title}
                 fill
-                className="object-cover"
+                className="object-contain p-4"
                 priority
               />
               {product.badge && (
@@ -62,6 +62,7 @@ export default async function ProductPage({
             <p className="text-sm text-gray-500">
               {categoryLabel[product.category] ?? product.category}
             </p>
+
             <h1 className="text-4xl font-semibold mt-2">{product.title}</h1>
 
             {product.short && (
@@ -107,6 +108,7 @@ export default async function ProductPage({
           <section className="mt-16">
             <div className="flex items-end justify-between gap-4 flex-wrap">
               <h2 className="text-2xl font-semibold">Produse similare</h2>
+
               <Link
                 href={`/produse?cat=${product.category}`}
                 className="text-sm underline underline-offset-4"
@@ -127,11 +129,13 @@ export default async function ProductPage({
                       src={p.image}
                       alt={p.title}
                       fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-[1.05]"
+                      className="object-contain p-3 transition-transform duration-500 group-hover:scale-[1.05]"
                     />
                   </div>
+
                   <div className="p-4">
                     <h3 className="font-semibold leading-snug">{p.title}</h3>
+
                     <p className="mt-2 text-sm underline underline-offset-4">
                       Vezi detalii
                     </p>

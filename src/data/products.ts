@@ -12,8 +12,8 @@ export type Product = {
 
 export const products: Product[] = [
   {
-    title: "Riflaj WPC Premium – Nuc",
-    slug: "riflaj-wpc-nuc",
+    title: "Riflaj WPC Premium – Stejar Noir",
+    slug: "riflaj-wpc-stejar-noir",
     category: "riflaje",
     image: "/p1.jpg",
     badge: "Popular",
