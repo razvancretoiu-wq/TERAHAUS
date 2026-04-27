@@ -47,12 +47,12 @@ export const products: Product[] = [
     features: ["Dimeniuni: 2900mm x 220mm x 26mm", "Textură premium", "Rezistență UV"],
   },
   {
-    title: "Clips + Șuruburi inox",
-    slug: "clips-suruburi-inox",
-    category: "accesorii",
-    image: "/p7.jpg",
-    short: "Set complet pentru montaj profesional și rezistent în timp.",
-    features: ["Inox", "Montaj rapid", "Prindere sigură"],
+    title: "Riflaj WPC Coextrudat – Blue Gray",
+    slug: "riflaj-wpc-coextrudat-blue-gray",
+    category: "riflaje-exterior",
+    image: "/p5.jpg",
+    short: "Riflaj WPC premium, coextrudat, generatia a II-a, potrivit pentru placarea peretilor, tavanelor, gardurilor la exterior.",
+    features: ["Dimeniuni: 2900mm x 220mm x 26mm", "Textură premium", "Rezistență UV"],
   },
   {
     title: "Profile & Îmbinări",
