@@ -47,23 +47,6 @@ export const products: Product[] = [
     features: ["Dimeniuni: 2900mm x 220mm x 26mm", "Textură premium", "Rezistență UV"],
   },
   {
-    title: "Sistem Fațadă WPC – Line",
-    slug: "fatada-wpc-line",
-    category: "fatade",
-    image: "/p5.jpg",
-    badge: "Popular",
-    short: "Sistem de fațadă cu linii curate, pentru arhitectură contemporană.",
-    features: ["Design arhitectural", "Fixare sigură", "Durabilitate ridicată"],
-  },
-  {
-    title: "Sistem Fațadă WPC – Panel",
-    slug: "fatada-wpc-panel",
-    category: "fatade",
-    image: "/p6.jpg",
-    short: "Panouri WPC pentru fațade, cu finisaj uniform și montaj eficient.",
-    features: ["Montaj eficient", "Finisaj uniform", "Rezistență la vreme"],
-  },
-  {
     title: "Clips + Șuruburi inox",
     slug: "clips-suruburi-inox",
     category: "accesorii",
