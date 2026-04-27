@@ -81,7 +81,36 @@ export const products: Product[] = [
     image: "/p5.jpg",
     images: ["/p5.jpg", "/p5-2.jpg"],
     short:
-      "Riflaj WPC premium, coextrudat, generația a II-a, cu finisaj Blue Gray, recomandat pentru exterior.",
+      "Riflaj WPC premium, coextrudat, generația a II-a, potrivit pentru placarea pereților, tavanelor și gardurilor la exterior.",
+    features: [
+      "Dimensiuni: 2900mm x 220mm x 26mm",
+      "Textură premium",
+      "Rezistență UV",
+    ],
+  },
+{
+    title: "Riflaj WPC – Coffee Brown",
+    slug: "riflaj-wpc-coffee-brown",
+    category: "riflaje-exterior",
+    image: "/p6.jpg",
+    images: ["/p6.jpg", "/p6-2.jpg"],
+    short:
+      "Riflaj WPC premium, coextrudat, prima generatie, potrivit pentru placarea pereților, tavanelor și gardurilor la exterior.",
+    features: [
+      "Dimensiuni: 2900mm x 220mm x 26mm",
+      "Textură premium",
+      "Rezistență UV",
+
+    ],
+  },
+{
+    title: "Riflaj WPC – Light Gray",
+    slug: "riflaj-wpc-light-gray",
+    category: "riflaje-exterior",
+    image: "/p7.jpg",
+    images: ["/p7.jpg", "/p7-2.jpg"],
+    short:
+      "Riflaj WPC premium, coextrudat, prima generatie, potrivit pentru placarea pereților, tavanelor și gardurilor la exterior.",
     features: [
       "Dimensiuni: 2900mm x 220mm x 26mm",
       "Textură premium",
