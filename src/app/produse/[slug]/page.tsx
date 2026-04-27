@@ -19,6 +19,8 @@ export default async function ProductPage({
   const product = products.find((p) => p.slug === slug)
   if (!product) return notFound()
 
+  const productImages = product.images?.length ? product.images : [product.image]
+
   const related = products
     .filter((p) => p.category === product.category && p.slug !== product.slug)
     .slice(0, 4)
@@ -37,22 +39,27 @@ export default async function ProductPage({
         </div>
 
         <div className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:items-start">
-          <div className="w-full">
-            <div className="relative w-full h-[520px] sm:h-[680px] lg:h-[760px] rounded-2xl bg-white overflow-hidden">
-              <Image
-                src={product.image}
-                alt={product.title}
-                fill
-                className="object-contain rounded-2xl"
-                priority
-              />
+          <div className="w-full space-y-6">
+            {productImages.map((img, index) => (
+              <div
+                key={`${img}-${index}`}
+                className="relative w-full h-[520px] sm:h-[680px] lg:h-[760px] rounded-2xl bg-white overflow-hidden"
+              >
+                <Image
+                  src={img}
+                  alt={`${product.title} ${index + 1}`}
+                  fill
+                  className="object-contain rounded-2xl"
+                  priority={index === 0}
+                />
 
-              {product.badge && (
-                <span className="absolute left-4 top-4 text-xs bg-black text-white px-3 py-1 rounded-full">
-                  {product.badge}
-                </span>
-              )}
-            </div>
+                {index === 0 && product.badge && (
+                  <span className="absolute left-4 top-4 text-xs bg-black text-white px-3 py-1 rounded-full">
+                    {product.badge}
+                  </span>
+                )}
+              </div>
+            ))}
           </div>
 
           <div className="lg:pt-2">
