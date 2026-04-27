@@ -1,4 +1,4 @@
-export type ProductCategory = "riflaje" | "deck" | "fatade" | "accesorii"
+export type ProductCategory = "riflaje interior" | "riflaje exterior" | "accesorii"
 
 export type Product = {
   title: string
@@ -14,7 +14,7 @@ export const products: Product[] = [
   {
     title: "Riflaj WPC Premium – Stejar Noir",
     slug: "riflaj-wpc-stejar-noir",
-    category: "riflaje",
+    category: "riflaje interior",
     image: "/p1.jpg",
     badge: "Popular",
     short: "Riflaj WPC premium, finisaj elegant, potrivit pentru placarea pereților și tavanelor la interior.",
@@ -23,34 +23,35 @@ export const products: Product[] = [
   {
     title: "Riflaj WPC Premium – Pearl White",
     slug: "riflaj-wpc-pearl-white",
-    category: "riflaje",
+    category: "riflaje interior",
     image: "/p2.jpg",
     badge: "Popular",
     short: "Riflaj WPC premium, finisaj elegant, potrivit pentru placarea pereților și tavanelor la interior.",
     features: ["Dimensiuni: 2900mm x 168mm x 24mm", "Întreținere ușoară", "Montaj rapid"],
   },
   {
-    title: "Deck WPC – Teak",
-    slug: "deck-wpc-teak",
-    category: "riflaje",
+    title: "Riflaj WPC Premium – Grey Oak",
+    slug: "riflaj-wpc-grey-oak",
+    category: "riflaje interior",
     image: "/p3.jpg",
     badge: "Popular",
     short: "Riflaj WPC premium, finisaj elegant, potrivit pentru placarea pereților și tavanelor la interior.",
     features: ["Dimensiuni: 2900mm x 168mm x 24mm", "Întreținere ușoară", "Montaj rapid"],
   },
   {
-    title: "Deck WPC – Walnut",
-    slug: "deck-wpc-walnut",
-    category: "deck",
+    title: "Riflaj WPC Coextrudat – Walnut Color",
+    slug: "riflaj-wpc-coextrudat-walnut-color",
+    category: "riflaje exterior",
     image: "/p4.jpg",
-    short: "Culoare caldă, ideal pentru terase și zone de relaxare.",
-    features: ["Întreținere minimă", "Textură premium", "Rezistență UV"],
+    short: "Riflaj WPC premium, coextrudat, generatia a II-a, potrivit pentru placarea peretilor, tavanelor, gardurilor la exterior.",
+    features: ["Dimeniuni: 2900mm x 220mm x 26mm", "Textură premium", "Rezistență UV"],
   },
   {
     title: "Sistem Fațadă WPC – Line",
     slug: "fatada-wpc-line",
     category: "fatade",
     image: "/p5.jpg",
+    badge: "Popular",
     short: "Sistem de fațadă cu linii curate, pentru arhitectură contemporană.",
     features: ["Design arhitectural", "Fixare sigură", "Durabilitate ridicată"],
   },
