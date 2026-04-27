@@ -1,4 +1,4 @@
-export type ProductCategory = "riflaje interior" | "riflaje exterior" | "accesorii"
+export type ProductCategory = "riflaje-interior" | "riflaje-exterior" | "accesorii"
 
 export type Product = {
   title: string
@@ -14,7 +14,7 @@ export const products: Product[] = [
   {
     title: "Riflaj WPC Premium – Stejar Noir",
     slug: "riflaj-wpc-stejar-noir",
-    category: "riflaje interior",
+    category: "riflaje-interior",
     image: "/p1.jpg",
     badge: "Popular",
     short: "Riflaj WPC premium, finisaj elegant, potrivit pentru placarea pereților și tavanelor la interior.",
@@ -23,7 +23,7 @@ export const products: Product[] = [
   {
     title: "Riflaj WPC Premium – Pearl White",
     slug: "riflaj-wpc-pearl-white",
-    category: "riflaje interior",
+    category: "riflaje-interior",
     image: "/p2.jpg",
     badge: "Popular",
     short: "Riflaj WPC premium, finisaj elegant, potrivit pentru placarea pereților și tavanelor la interior.",
@@ -32,7 +32,7 @@ export const products: Product[] = [
   {
     title: "Riflaj WPC Premium – Grey Oak",
     slug: "riflaj-wpc-grey-oak",
-    category: "riflaje interior",
+    category: "riflaje-interior",
     image: "/p3.jpg",
     badge: "Popular",
     short: "Riflaj WPC premium, finisaj elegant, potrivit pentru placarea pereților și tavanelor la interior.",
@@ -41,7 +41,7 @@ export const products: Product[] = [
   {
     title: "Riflaj WPC Coextrudat – Walnut Color",
     slug: "riflaj-wpc-coextrudat-walnut-color",
-    category: "riflaje exterior",
+    category: "riflaje-exterior",
     image: "/p4.jpg",
     short: "Riflaj WPC premium, coextrudat, generatia a II-a, potrivit pentru placarea peretilor, tavanelor, gardurilor la exterior.",
     features: ["Dimeniuni: 2900mm x 220mm x 26mm", "Textură premium", "Rezistență UV"],

@@ -6,15 +6,15 @@ import Image from "next/image"
 import { products } from "@/data/products"
 
 const tabs = [
-  { key: "riflaje interior", label: "Riflaje Interior" },
-  { key: "riflaje exterior", label: "Riflaje Exterior" },
+  { key: "riflaje-interior", label: "Riflaje Interior" },
+  { key: "riflaje-exterior", label: "Riflaje Exterior" },
   { key: "accesorii", label: "Accesorii" },
 ] as const
 
 type TabKey = (typeof tabs)[number]["key"]
 
 export default function ProductTabs() {
-  const [active, setActive] = useState<TabKey>("riflaje")
+  const [active, setActive] = useState<TabKey>("riflaje-interior")
 
   const filtered = useMemo(() => {
     return products.filter((p) => p.category === active).slice(0, 8)
@@ -77,7 +77,7 @@ export default function ProductTabs() {
 
                 <div className="pt-4">
                   <p className="text-[10px] uppercase tracking-[0.18em] text-gray-400">
-                    {p.category}
+                    {p.category.replace("-", " ")}
                   </p>
 
                   <h3 className="mt-2 text-base font-semibold leading-snug text-black">
