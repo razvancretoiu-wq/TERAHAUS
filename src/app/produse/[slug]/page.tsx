@@ -4,9 +4,8 @@ import { notFound } from "next/navigation"
 import { products } from "@/data/products"
 
 const categoryLabel: Record<string, string> = {
-  riflaje: "Riflaje",
-  deck: "Deck",
-  fatade: "Fațade",
+  "riflaje-interior": "Riflaje Interior",
+  "riflaje-exterior": "Riflaje Exterior",
   accesorii: "Accesorii",
 }
 
@@ -37,17 +36,16 @@ export default async function ProductPage({
           <span className="text-gray-800">{product.title}</span>
         </div>
 
-        <div className="grid gap-10 lg:grid-cols-[1.25fr_0.75fr] lg:items-start">
+        <div className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:items-start">
           <div className="w-full">
-            <div className="relative w-full h-[760px] rounded-2xl bg-white overflow-hidden">
-  <Image
-    src={product.image}
-    alt={product.title}
-    fill
-    className="object-contain rounded-2xl"
-    priority
-  />
-</div>
+            <div className="relative w-full h-[520px] sm:h-[680px] lg:h-[760px] rounded-2xl bg-white overflow-hidden">
+              <Image
+                src={product.image}
+                alt={product.title}
+                fill
+                className="object-contain rounded-2xl"
+                priority
+              />
 
               {product.badge && (
                 <span className="absolute left-4 top-4 text-xs bg-black text-white px-3 py-1 rounded-full">
@@ -124,12 +122,12 @@ export default async function ProductPage({
                   className="group block"
                 >
                   <div className="bg-white transition-all duration-500 hover:-translate-y-1">
-                    <div className="relative aspect-square rounded-2xl bg-white overflow-hidden">
+                    <div className="relative h-[360px] rounded-2xl bg-white overflow-hidden">
                       <Image
                         src={p.image}
                         alt={p.title}
                         fill
-                        className="object-cover rounded-2xl transition-transform duration-700 group-hover:scale-105"
+                        className="object-contain rounded-2xl transition-transform duration-700 group-hover:scale-105"
                       />
                     </div>
 
