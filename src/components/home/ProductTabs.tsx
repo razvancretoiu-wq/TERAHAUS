@@ -61,7 +61,7 @@ export default function ProductTabs() {
               className="group block"
             >
               <div className="bg-white transition-all duration-500 hover:-translate-y-1">
-                <div className="relative h-[320px] bg-gray-50 flex items-center justify-center overflow-hidden">
+                <div className="relative h-[320px] rounded-2xl bg-gray-50 flex items-center justify-center overflow-hidden">
                   <Image
                     src={p.image}
                     alt={p.title}
@@ -76,16 +76,16 @@ export default function ProductTabs() {
                   )}
                 </div>
 
-                <div className="pt-5">
-                  <p className="text-xs uppercase tracking-[0.22em] text-gray-400">
+                <div className="pt-4">
+                  <p className="text-[10px] uppercase tracking-[0.18em] text-gray-400">
                     {p.category}
                   </p>
 
-                  <h3 className="mt-2 text-lg font-semibold leading-snug text-black">
+                  <h3 className="mt-2 text-base font-semibold leading-snug text-black">
                     {p.title}
                   </h3>
 
-                  <p className="mt-4 inline-block text-sm underline underline-offset-4">
+                  <p className="mt-3 inline-block text-xs underline underline-offset-4">
                     Vezi detalii
                   </p>
                 </div>
