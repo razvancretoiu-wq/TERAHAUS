@@ -55,12 +55,12 @@ export default function ProductCategoryCarousels() {
                       className="group min-w-[86%] sm:min-w-[48%] lg:min-w-[32%]"
                     >
                       <div className="overflow-hidden rounded-2xl border border-black bg-white">
-                        <div className="relative h-[390px] bg-white overflow-hidden">
+                        <div className="relative h-[390px] overflow-hidden">
                           <Image
                             src={p.image}
                             alt={p.title}
                             fill
-                            className="object-contain p-3 transition-transform duration-700 group-hover:scale-105"
+                            className="object-contain transition-transform duration-700 group-hover:scale-105"
                           />
 
                           {p.badge && (
