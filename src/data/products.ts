@@ -24,11 +24,7 @@ export const products: Product[] = [
     badge: "Popular",
     short:
       "Riflaj WPC premium, cu finisaj elegant Stejar Noir, potrivit pentru placarea pereților și tavanelor la interior.",
-    features: [
-      "Dimensiuni: 2900mm x 168mm x 24mm",
-      "Întreținere ușoară",
-      "Montaj rapid",
-    ],
+    features: ["Dimensiuni: 2900mm x 168mm x 24mm", "Întreținere ușoară", "Montaj rapid"],
   },
   {
     title: "Riflaj WPC Premium – Pearl White",
@@ -39,11 +35,7 @@ export const products: Product[] = [
     badge: "Popular",
     short:
       "Riflaj WPC premium, cu finisaj Pearl White, ideal pentru interioare luminoase, moderne și elegante.",
-    features: [
-      "Dimensiuni: 2900mm x 168mm x 24mm",
-      "Întreținere ușoară",
-      "Montaj rapid",
-    ],
+    features: ["Dimensiuni: 2900mm x 168mm x 24mm", "Întreținere ușoară", "Montaj rapid"],
   },
   {
     title: "Riflaj WPC Premium – Grey Oak",
@@ -54,11 +46,7 @@ export const products: Product[] = [
     badge: "Popular",
     short:
       "Riflaj WPC premium, cu aspect Grey Oak, potrivit pentru pereți decorativi și tavane interioare.",
-    features: [
-      "Dimensiuni: 2900mm x 168mm x 24mm",
-      "Întreținere ușoară",
-      "Montaj rapid",
-    ],
+    features: ["Dimensiuni: 2900mm x 168mm x 24mm", "Întreținere ușoară", "Montaj rapid"],
   },
   {
     title: "Riflaj WPC Coextrudat – Walnut Color",
@@ -68,11 +56,7 @@ export const products: Product[] = [
     images: ["/p4.jpg", "/p4-2.jpg"],
     short:
       "Riflaj WPC premium, coextrudat, generația a II-a, potrivit pentru placarea pereților, tavanelor și gardurilor la exterior.",
-    features: [
-      "Dimensiuni: 2900mm x 220mm x 26mm",
-      "Textură premium",
-      "Rezistență UV",
-    ],
+    features: ["Dimensiuni: 2900mm x 220mm x 26mm", "Textură premium", "Rezistență UV"],
   },
   {
     title: "Riflaj WPC Coextrudat – Blue Gray",
@@ -82,68 +66,53 @@ export const products: Product[] = [
     images: ["/p5.jpg", "/p5-2.jpg"],
     short:
       "Riflaj WPC premium, coextrudat, generația a II-a, potrivit pentru placarea pereților, tavanelor și gardurilor la exterior.",
-    features: [
-      "Dimensiuni: 2900mm x 220mm x 26mm",
-      "Textură premium",
-      "Rezistență UV",
-    ],
+    features: ["Dimensiuni: 2900mm x 220mm x 26mm", "Textură premium", "Rezistență UV"],
   },
-{
+  {
     title: "Riflaj WPC – Coffee Brown",
     slug: "riflaj-wpc-coffee-brown",
     category: "riflaje-exterior",
     image: "/p6.jpg",
     images: ["/p6.jpg", "/p6-2.jpg"],
     short:
-      "Riflaj WPC premium, coextrudat, prima generatie, potrivit pentru placarea pereților, tavanelor și gardurilor la exterior.",
-    features: [
-      "Dimensiuni: 2900mm x 220mm x 26mm",
-      "Textură premium",
-      "Rezistență UV",
-
-    ],
+      "Riflaj WPC premium, prima generație, potrivit pentru placarea pereților, tavanelor și gardurilor la exterior.",
+    features: ["Dimensiuni: 2900mm x 220mm x 26mm", "Textură premium", "Rezistență UV"],
   },
-{
+  {
     title: "Riflaj WPC – Light Gray",
     slug: "riflaj-wpc-light-gray",
     category: "riflaje-exterior",
     image: "/p7.jpg",
     images: ["/p7.jpg", "/p7-2.jpg"],
     short:
-      "Riflaj WPC premium, coextrudat, prima generatie, potrivit pentru placarea pereților, tavanelor și gardurilor la exterior.",
-    features: [
-      "Dimensiuni: 2900mm x 220mm x 26mm",
-      "Textură premium",
-      "Rezistență UV",
-    ],
+      "Riflaj WPC premium, prima generație, potrivit pentru placarea pereților, tavanelor și gardurilor la exterior.",
+    features: ["Dimensiuni: 2900mm x 220mm x 26mm", "Textură premium", "Rezistență UV"],
   },
   {
-    title: "Profil Coltar - Pearl White",
+    title: "Profil Colțar – Pearl White",
     slug: "profil-coltar-pearl-white",
     category: "accesorii",
     image: "/p8.jpg",
     images: ["/p8.jpg"],
-    short: "Profile pentru colț, terminare și îmbinări curate.",
+    short: "Profil colțar pentru finisarea curată a marginilor și îmbinărilor.",
     features: ["Dimensiuni: 2900mm x 25mm x 25mm", "Compatibilitate", "Durabilitate"],
   },
-],
-{
-    title: "Profil Coltar - Stejar Noir",
+  {
+    title: "Profil Colțar – Stejar Noir",
     slug: "profil-coltar-stejar-noir",
     category: "accesorii",
     image: "/p9.jpg",
     images: ["/p9.jpg"],
-    short: "Profile pentru colț, terminare și îmbinări curate.",
+    short: "Profil colțar pentru finisarea curată a marginilor și îmbinărilor.",
     features: ["Dimensiuni: 2900mm x 25mm x 25mm", "Compatibilitate", "Durabilitate"],
   },
-],
-{
-    title: "Profil Coltar - Grey Oak",
+  {
+    title: "Profil Colțar – Grey Oak",
     slug: "profil-coltar-grey-oak",
     category: "accesorii",
     image: "/p10.jpg",
     images: ["/p10.jpg"],
-    short: "Profile pentru colț, terminare și îmbinări curate.",
+    short: "Profil colțar pentru finisarea curată a marginilor și îmbinărilor.",
     features: ["Dimensiuni: 2900mm x 25mm x 25mm", "Compatibilitate", "Durabilitate"],
   },
-],
+]
