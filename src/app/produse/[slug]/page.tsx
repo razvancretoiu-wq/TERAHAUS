@@ -43,14 +43,15 @@ export default async function ProductPage({
             {productImages.map((img, index) => (
               <div
                 key={`${img}-${index}`}
-                className="relative w-full h-[520px] sm:h-[680px] lg:h-[760px] rounded-2xl bg-white overflow-hidden"
+                className="relative w-full aspect-[4/5] rounded-2xl bg-white overflow-hidden"
               >
                 <Image
                   src={img}
                   alt={`${product.title} ${index + 1}`}
                   fill
-                  className="object-contain rounded-2xl"
+                  className="object-cover rounded-2xl"
                   priority={index === 0}
+                  sizes="(max-width: 768px) 100vw, 60vw"
                 />
 
                 {index === 0 && product.badge && (
@@ -129,12 +130,13 @@ export default async function ProductPage({
                   className="group block"
                 >
                   <div className="bg-white transition-all duration-500 hover:-translate-y-1">
-                    <div className="relative h-[360px] rounded-2xl bg-white overflow-hidden">
+                    <div className="relative aspect-[4/5] rounded-2xl bg-white overflow-hidden">
                       <Image
                         src={p.image}
                         alt={p.title}
                         fill
-                        className="object-contain rounded-2xl transition-transform duration-700 group-hover:scale-105"
+                        className="object-cover rounded-2xl transition-transform duration-700 group-hover:scale-105"
+                        sizes="(max-width: 768px) 100vw, 25vw"
                       />
                     </div>
 
