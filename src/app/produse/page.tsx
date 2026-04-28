@@ -29,13 +29,16 @@ const categoryLabel: Record<Category, string> = {
   accesorii: "Accesorii",
 }
 
-export default function ProdusePage({
+export default async function ProdusePage({
   searchParams,
 }: {
-  searchParams?: { cat?: string }
+  searchParams?: Promise<{ cat?: string }>
 }) {
-  const active = categories.some((c) => c.key === searchParams?.cat)
-    ? (searchParams?.cat as Category)
+  const params = await searchParams
+  const cat = params?.cat
+
+  const active = categories.some((c) => c.key === cat)
+    ? (cat as Category)
     : undefined
 
   const filtered = active
