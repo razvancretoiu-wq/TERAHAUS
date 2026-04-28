@@ -46,31 +46,43 @@ export default function ProductCategoryCarousels() {
                 </Link>
               </div>
 
-              <div className="overflow-x-auto pb-4 scrollbar-hide">
-                <div className="flex gap-8">
+              <div className="overflow-x-auto pb-2 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                <div className="flex gap-5">
                   {items.map((p) => (
                     <Link
                       key={p.slug}
                       href={`/produse/${p.slug}`}
-                      className="group min-w-[82%] sm:min-w-[48%] lg:min-w-[31.8%]"
+                      className="group min-w-[86%] sm:min-w-[48%] lg:min-w-[32%]"
                     >
-                      <div className="relative h-[360px] rounded-2xl bg-white overflow-hidden">
-                        <Image
-                          src={p.image}
-                          alt={p.title}
-                          fill
-                          className="object-contain rounded-2xl transition-transform duration-700 group-hover:scale-105"
-                        />
-                      </div>
+                      <div className="overflow-hidden rounded-2xl border border-black bg-white">
+                        <div className="relative h-[390px] bg-white overflow-hidden">
+                          <Image
+                            src={p.image}
+                            alt={p.title}
+                            fill
+                            className="object-contain p-3 transition-transform duration-700 group-hover:scale-105"
+                          />
 
-                      <div className="pt-4">
-                        <h3 className="text-base font-semibold leading-snug">
-                          {p.title}
-                        </h3>
+                          {p.badge && (
+                            <span className="absolute left-4 top-4 rounded-full bg-black px-3 py-1 text-xs text-white">
+                              {p.badge}
+                            </span>
+                          )}
+                        </div>
 
-                        <p className="mt-3 inline-block text-xs underline underline-offset-4">
-                          Vezi detalii
-                        </p>
+                        <div className="px-5 pb-5 pt-4">
+                          <p className="text-xs text-gray-500 capitalize">
+                            {section.title}
+                          </p>
+
+                          <h3 className="mt-1 text-base font-semibold leading-snug">
+                            {p.title}
+                          </h3>
+
+                          <p className="mt-3 inline-block text-sm underline underline-offset-4">
+                            Vezi detalii
+                          </p>
+                        </div>
                       </div>
                     </Link>
                   ))}
