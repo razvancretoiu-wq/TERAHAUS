@@ -62,7 +62,7 @@ export default async function ProdusePage({
           </div>
 
           <a
-            href="https://wa.me/407272608654?text=Bun%C4%83!%20A%C8%99%20dori%20o%20ofert%C4%83%20pentru%20produse%20WPC."
+            href="https://wa.me/40727608654?text=Bun%C4%83!%20A%C8%99%20dori%20o%20ofert%C4%83%20pentru%20produse%20WPC."
             className="inline-flex items-center justify-center rounded-full bg-[#C8732D] px-6 py-3 text-sm uppercase tracking-wider text-white shadow-sm transition hover:bg-[#B96524]"
           >
             Cere ofertă
