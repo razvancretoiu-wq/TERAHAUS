@@ -50,7 +50,7 @@ export default function HeroSlider() {
           </Link>
 
           <a
-            href="https://wa.me/407272608654?text=Bun%C4%83!%20A%C8%99%20dori%20o%20ofert%C4%83%20pentru%20produse%20WPC."
+            href="https://wa.me/40727608654?text=Bun%C4%83!%20A%C8%99%20dori%20o%20ofert%C4%83%20pentru%20produse%20WPC."
             className="bg-white/10 hover:bg-white/15 transition text-white px-7 py-3 rounded-full text-sm uppercase tracking-wider border border-white/20"
           >
             Cere ofertă
