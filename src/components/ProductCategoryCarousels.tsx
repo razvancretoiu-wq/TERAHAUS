@@ -6,6 +6,10 @@ import { products } from "@/data/products"
 
 const sections = [
   {
+    title: "Panouri Decorative",
+    category: "panouri-decorative",
+  },
+  {
     title: "Deck WPC",
     category: "deck",
   },
@@ -22,7 +26,6 @@ const sections = [
     category: "riflaje-interior",
   },
 ] as const
-
 export default function ProductCategoryCarousels() {
   return (
     <section className="bg-white py-20">

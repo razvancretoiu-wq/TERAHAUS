@@ -15,6 +15,11 @@ const categories: {
     href: "/produse",
   },
   {
+    key: "panouri-decorative",
+    label: "Panouri Decorative",
+    href: "/produse?cat=panouri-decorative",
+  },
+  {
     key: "deck",
     label: "Deck WPC",
     href: "/produse?cat=deck",
@@ -37,6 +42,7 @@ const categories: {
 ]
 
 const categoryLabel: Record<ProductCategory, string> = {
+  "panouri-decorative": "Panouri Decorative",
   deck: "Deck WPC",
   "riflaje-interior": "Riflaje Interior",
   "riflaje-exterior": "Riflaje Exterior",
