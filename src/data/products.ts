@@ -25,7 +25,7 @@ export const products: Product[] = [
     images: ["/p11.jpg", "/p11-2.jpg"],
     badge: "Popular",
     short:
-      "Placa Deck WPC Coffee Brown este o soluție elegantă și rezistentă pentru amenajarea teraselor, aleilor, balcoanelor, foișoarelor și altor spații exterioare. Aspectul cald, inspirat de lemnul natural, este completat de avantajele materialului compozit: întreținere redusă, stabilitate și rezistență bună la umiditate și variații de temperatură.",
+      "Placa Deck WPC Coffee Brown este o soluție elegantă și rezistentă pentru amenajarea teraselor, aleilor, balcoanelor, foișoarelor și altor spații exterioare. Aspectul cald, inspirat de lemnul natural, este completat de avantajele materialului compozit: întreținere redusă, stabilitate și rezistență excelentă la factorii de mediu.",
     features: [
       "Dimensiuni: 2900 × 146 × 25 mm",
       "Culoare: Coffee Brown",
@@ -33,13 +33,39 @@ export const products: Product[] = [
       "Construcție: profil cu 4 goluri dreptunghiulare",
       "Greutate: 2,3 kg/ml",
       "Densitate: 713,5 kg/m³",
-      "Absorbție de apă în 24 de ore: 2,8%",
-      "Umflare în 24 de ore: 0,4%",
-      "Umflare după 2 ore la 100°C: 0,08%",
+      "Absorbție apă (24h): 2,8%",
+      "Umflare (24h): 0,4%",
+      "Umflare la 100°C (2h): 0,08%",
       "Modul de elasticitate: 3387 N/mm²",
       "Rezistență la îndoire: 2654 MPa",
     ],
   },
+
+  {
+    title:
+      "Placă Deck Lemn Compozit (WPC) Light Gray – 146 × 25 × 2900 mm",
+    slug: "placa-deck-wpc-light-gray-146x25x2900",
+    category: "deck",
+    image: "/p12.jpg",
+    images: ["/p12.jpg", "/p12-2.jpg"],
+    badge: "Popular",
+    short:
+      "Placa Deck WPC Light Gray oferă un design modern și elegant pentru terase, alei, piscine, foișoare și alte spații exterioare. Nuanța contemporană Light Gray se îmbină perfect cu arhitectura modernă, iar materialul compozit asigură durabilitate ridicată și întreținere minimă.",
+    features: [
+      "Dimensiuni: 2900 × 146 × 25 mm",
+      "Culoare: Light Gray",
+      "Compoziție: 60% lemn, 30% HDPE, 10% aditivi",
+      "Construcție: profil cu 4 goluri dreptunghiulare",
+      "Greutate: 2,3 kg/ml",
+      "Densitate: 713,5 kg/m³",
+      "Absorbție apă (24h): 2,8%",
+      "Umflare (24h): 0,4%",
+      "Umflare la 100°C (2h): 0,08%",
+      "Modul de elasticitate: 3387 N/mm²",
+      "Rezistență la îndoire: 2654 MPa",
+    ],
+  },
+
   {
     title: "Riflaj WPC Premium – Stejar Noir",
     slug: "riflaj-wpc-stejar-noir",
