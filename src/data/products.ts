@@ -23,7 +23,7 @@ export const products: Product[] = [
     category: "deck",
     image: "/p11.jpg",
     images: ["/p11.jpg", "/p11-2.jpg"],
-    badge: "Popular",
+    badge: "Standard",
     short:
       "Placa Deck WPC Coffee Brown este o soluție elegantă și rezistentă pentru amenajarea teraselor, aleilor, balcoanelor, foișoarelor și altor spații exterioare. Aspectul cald, inspirat de lemnul natural, este completat de avantajele materialului compozit: întreținere redusă, stabilitate și rezistență excelentă la factorii de mediu.",
     features: [
@@ -48,7 +48,7 @@ export const products: Product[] = [
     category: "deck",
     image: "/p12.jpg",
     images: ["/p12.jpg", "/p12-2.jpg"],
-    badge: "Popular",
+    badge: "Standard",
     short:
       "Placa Deck WPC Light Gray oferă un design modern și elegant pentru terase, alei, piscine, foișoare și alte spații exterioare. Nuanța contemporană Light Gray se îmbină perfect cu arhitectura modernă, iar materialul compozit asigură durabilitate ridicată și întreținere minimă.",
     features: [
@@ -65,7 +65,29 @@ export const products: Product[] = [
       "Rezistență la îndoire: 2654 MPa",
     ],
   },
-
+{
+  title:
+    "Placă Deck WPC Coextrudat Gen. II Walnut Color – 150 × 22 × 2900 mm",
+  slug: "placa-deck-wpc-coextrudat-walnut-color-150x22x2900",
+  category: "deck",
+  image: "/p13.jpg",
+  images: ["/p13.jpg", "/p13-2.jpg"],
+  badge: "Premium",
+  short:
+    "Placa Deck WPC Coextrudat Generația II Walnut Color este soluția premium pentru terase, piscine, balcoane, foișoare și alte amenajări exterioare. Stratul protector coextrudat oferă o rezistență superioară la razele UV, pete, zgârieturi și umezeală, iar finisajul cu aspect natural de lemn păstrează un design elegant pentru mulți ani.",
+  features: [
+    "Dimensiuni: 2900 × 150 × 22 mm",
+    "Culoare: Walnut Color",
+    "Generația II – Coextrudat",
+    "Compoziție: 60% fibre de lemn, 30% HDPE, 10% aditivi",
+    "Greutate: 2,9 kg/ml",
+    "Rezistență ridicată la UV",
+    "Rezistență superioară la zgârieturi",
+    "Rezistență la pete și umezeală",
+    "Întreținere redusă",
+    "Ideal pentru terase, piscine, alei, balcoane și foișoare",
+  ],
+},
   {
     title: "Riflaj WPC Premium – Stejar Noir",
     slug: "riflaj-wpc-stejar-noir",
