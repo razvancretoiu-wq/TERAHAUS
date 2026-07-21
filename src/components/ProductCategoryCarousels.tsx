@@ -6,6 +6,10 @@ import { products } from "@/data/products"
 
 const sections = [
   {
+    title: "Deck WPC",
+    category: "deck",
+  },
+  {
     title: "Riflaje Exterior",
     category: "riflaje-exterior",
   },
