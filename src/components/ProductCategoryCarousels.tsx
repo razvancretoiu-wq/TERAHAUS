@@ -81,44 +81,53 @@ export default function ProductCategoryCarousels() {
 
               <div className="overflow-x-auto pb-2 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
                 <div className="flex gap-5">
-                  {items.map((product) => (
-                    <Link
-                      key={product.slug}
-                      href={`/produse/${product.slug}`}
-                      className="group min-w-[86%] sm:min-w-[48%] lg:min-w-[32%]"
-                    >
-                      <div className="overflow-hidden rounded-2xl border border-black bg-white">
-                        <div className="relative aspect-[4/5] overflow-hidden">
-                          <Image
-                            src={product.image}
-                            alt={product.title}
-                            fill
-                            className="object-cover transition-transform duration-700 group-hover:scale-105"
-                          />
+                  {items.map((product) => {
+                    const isDeck = product.category === "deck"
 
-                          {product.badge && (
-                            <span className="absolute left-4 top-4 rounded-full bg-black px-3 py-1 text-xs text-white">
-                              {product.badge}
-                            </span>
-                          )}
+                    return (
+                      <Link
+                        key={product.slug}
+                        href={`/produse/${product.slug}`}
+                        className="group w-[86%] shrink-0 sm:w-[48%] lg:w-[calc((100%-2.5rem)/3)]"
+                      >
+                        <div className="overflow-hidden rounded-2xl border border-black bg-white">
+                          <div className="relative aspect-[4/5] overflow-hidden bg-white">
+                            <Image
+                              src={product.image}
+                              alt={product.title}
+                              fill
+                              sizes="(max-width: 640px) 86vw, (max-width: 1024px) 48vw, 33vw"
+                              className={`transition-transform duration-700 group-hover:scale-105 ${
+                                isDeck
+                                  ? "object-contain p-8 sm:p-10"
+                                  : "object-cover"
+                              }`}
+                            />
+
+                            {product.badge && (
+                              <span className="absolute left-4 top-4 rounded-full bg-black px-3 py-1 text-xs text-white">
+                                {product.badge}
+                              </span>
+                            )}
+                          </div>
+
+                          <div className="px-5 pb-5 pt-4">
+                            <p className="text-xs capitalize text-gray-500">
+                              {section.title}
+                            </p>
+
+                            <h3 className="mt-1 text-base font-semibold leading-snug">
+                              {product.title}
+                            </h3>
+
+                            <p className="mt-3 inline-block text-sm underline underline-offset-4">
+                              Vezi detalii
+                            </p>
+                          </div>
                         </div>
-
-                        <div className="px-5 pb-5 pt-4">
-                          <p className="text-xs capitalize text-gray-500">
-                            {section.title}
-                          </p>
-
-                          <h3 className="mt-1 text-base font-semibold leading-snug">
-                            {product.title}
-                          </h3>
-
-                          <p className="mt-3 inline-block text-sm underline underline-offset-4">
-                            Vezi detalii
-                          </p>
-                        </div>
-                      </div>
-                    </Link>
-                  ))}
+                      </Link>
+                    )
+                  })}
                 </div>
               </div>
             </div>
