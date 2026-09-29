@@ -177,13 +177,14 @@ export const products: Product[] = [
     ],
   },
 
+  // DECK 1 - COFFEE BROWN
   {
     title:
       "Placă Deck Lemn Compozit (WPC) Coffee Brown – 146 × 25 × 2900 mm",
     slug: "placa-deck-wpc-coffee-brown-146x25x2900",
     category: "deck",
-    image: "/p11.jpg",
-    images: ["/p11.jpg", "/p11-2.jpg"],
+    image: "/p11-new.jpg",
+    images: ["/p11-new.jpg", "/p11.jpg", "/p11-2.jpg"],
     badge: "Standard",
     short:
       "Placa Deck WPC Coffee Brown este o soluție elegantă și rezistentă pentru amenajarea teraselor, aleilor, balcoanelor, foișoarelor și altor spații exterioare. Aspectul cald, inspirat de lemnul natural, este completat de avantajele materialului compozit: întreținere redusă, stabilitate și rezistență excelentă la factorii de mediu.",
@@ -202,79 +203,56 @@ export const products: Product[] = [
     ],
   },
 
+  // DECK 2 - WALNUT COLOR
   {
-  title:
-    "Placă Deck Lemn Compozit (WPC) Coffee Brown – 146 × 25 × 2900 mm",
-  slug: "placa-deck-wpc-coffee-brown-146x25x2900",
-  category: "deck",
-  image: "/p11-new.jpg",
-  images: ["/p11-new.jpg", "/p11.jpg", "/p11-2.jpg"],
-  badge: "Standard",
-  short:
-    "Placa Deck WPC Coffee Brown este o soluție elegantă și rezistentă pentru amenajarea teraselor, aleilor, balcoanelor, foișoarelor și altor spații exterioare. Aspectul cald, inspirat de lemnul natural, este completat de avantajele materialului compozit: întreținere redusă, stabilitate și rezistență excelentă la factorii de mediu.",
-  features: [
-    "Dimensiuni: 2900 × 146 × 25 mm",
-    "Culoare: Coffee Brown",
-    "Compoziție: 60% lemn, 30% HDPE, 10% aditivi",
-    "Construcție: profil cu 4 goluri dreptunghiulare",
-    "Greutate: 2,3 kg/ml",
-    "Densitate: 713,5 kg/m³",
-    "Absorbție apă (24h): 2,8%",
-    "Umflare (24h): 0,4%",
-    "Umflare la 100°C (2h): 0,08%",
-    "Modul de elasticitate: 3387 N/mm²",
-    "Rezistență la îndoire: 2654 MPa",
-  ],
-},
+    title:
+      "Placă Deck WPC Coextrudat Gen. II Walnut Color – 150 × 22 × 2900 mm",
+    slug: "placa-deck-wpc-coextrudat-walnut-color-150x22x2900",
+    category: "deck",
+    image: "/p13-new.jpg",
+    images: ["/p13-new.jpg", "/p13.jpg", "/p13-2.jpg"],
+    badge: "Premium",
+    short:
+      "Placa Deck WPC Coextrudat Generația II Walnut Color este soluția premium pentru terase, piscine, balcoane, foișoare și alte amenajări exterioare. Stratul protector coextrudat oferă o rezistență superioară la razele UV, pete, zgârieturi și umezeală, iar finisajul cu aspect natural de lemn păstrează un design elegant pentru mulți ani.",
+    features: [
+      "Dimensiuni: 2900 × 150 × 22 mm",
+      "Culoare: Walnut Color",
+      "Generația II – Coextrudat",
+      "Compoziție: 60% fibre de lemn, 30% HDPE, 10% aditivi",
+      "Greutate: 2,9 kg/ml",
+      "Rezistență ridicată la UV",
+      "Rezistență superioară la zgârieturi",
+      "Rezistență la pete și umezeală",
+      "Întreținere redusă",
+      "Ideal pentru terase, piscine, alei, balcoane și foișoare",
+    ],
+  },
 
-{
-  title:
-    "Placă Deck WPC Coextrudat Gen. II Walnut Color – 150 × 22 × 2900 mm",
-  slug: "placa-deck-wpc-coextrudat-walnut-color-150x22x2900",
-  category: "deck",
-  image: "/p13-new.jpg",
-  images: ["/p13-new.jpg", "/p13.jpg", "/p13-2.jpg"],
-  badge: "Premium",
-  short:
-    "Placa Deck WPC Coextrudat Generația II Walnut Color este soluția premium pentru terase, piscine, balcoane, foișoare și alte amenajări exterioare. Stratul protector coextrudat oferă o rezistență superioară la razele UV, pete, zgârieturi și umezeală, iar finisajul cu aspect natural de lemn păstrează un design elegant pentru mulți ani.",
-  features: [
-    "Dimensiuni: 2900 × 150 × 22 mm",
-    "Culoare: Walnut Color",
-    "Generația II – Coextrudat",
-    "Compoziție: 60% fibre de lemn, 30% HDPE, 10% aditivi",
-    "Greutate: 2,9 kg/ml",
-    "Rezistență ridicată la UV",
-    "Rezistență superioară la zgârieturi",
-    "Rezistență la pete și umezeală",
-    "Întreținere redusă",
-    "Ideal pentru terase, piscine, alei, balcoane și foișoare",
-  ],
-},
-
-{
-  title:
-    "Placă Deck Lemn Compozit (WPC) Light Gray – 146 × 25 × 2900 mm",
-  slug: "placa-deck-wpc-light-gray-146x25x2900",
-  category: "deck",
-  image: "/p12-new.jpg",
-  images: ["/p12-new.jpg", "/p12.jpg", "/p12-2.jpg"],
-  badge: "Standard",
-  short:
-    "Placa Deck WPC Light Gray oferă un design modern și elegant pentru terase, alei, piscine, foișoare și alte spații exterioare. Nuanța contemporană Light Gray se îmbină perfect cu arhitectura modernă, iar materialul compozit asigură durabilitate ridicată și întreținere minimă.",
-  features: [
-    "Dimensiuni: 2900 × 146 × 25 mm",
-    "Culoare: Light Gray",
-    "Compoziție: 60% lemn, 30% HDPE, 10% aditivi",
-    "Construcție: profil cu 4 goluri dreptunghiulare",
-    "Greutate: 2,3 kg/ml",
-    "Densitate: 713,5 kg/m³",
-    "Absorbție apă (24h): 2,8%",
-    "Umflare (24h): 0,4%",
-    "Umflare la 100°C (2h): 0,08%",
-    "Modul de elasticitate: 3387 N/mm²",
-    "Rezistență la îndoire: 2654 MPa",
-  ],
-},
+  // DECK 3 - LIGHT GRAY
+  {
+    title:
+      "Placă Deck Lemn Compozit (WPC) Light Gray – 146 × 25 × 2900 mm",
+    slug: "placa-deck-wpc-light-gray-146x25x2900",
+    category: "deck",
+    image: "/p12-new.jpg",
+    images: ["/p12-new.jpg", "/p12.jpg", "/p12-2.jpg"],
+    badge: "Standard",
+    short:
+      "Placa Deck WPC Light Gray oferă un design modern și elegant pentru terase, alei, piscine, foișoare și alte spații exterioare. Nuanța contemporană Light Gray se îmbină perfect cu arhitectura modernă, iar materialul compozit asigură durabilitate ridicată și întreținere minimă.",
+    features: [
+      "Dimensiuni: 2900 × 146 × 25 mm",
+      "Culoare: Light Gray",
+      "Compoziție: 60% lemn, 30% HDPE, 10% aditivi",
+      "Construcție: profil cu 4 goluri dreptunghiulare",
+      "Greutate: 2,3 kg/ml",
+      "Densitate: 713,5 kg/m³",
+      "Absorbție apă (24h): 2,8%",
+      "Umflare (24h): 0,4%",
+      "Umflare la 100°C (2h): 0,08%",
+      "Modul de elasticitate: 3387 N/mm²",
+      "Rezistență la îndoire: 2654 MPa",
+    ],
+  },
 
   {
     title: "Riflaj WPC Premium – Stejar Noir",
@@ -323,26 +301,28 @@ export const products: Product[] = [
       "Montaj rapid",
     ],
   },
-{
-  title: "Riflaj WPC Coextrudat – NEGRU",
-  slug: "riflaj-wpc-coextrudat-negru",
-  category: "riflaje-exterior",
-  image: "/p20.jpg",
-  images: ["/p20.jpg"],
-  badge: "Nou",
-  short:
-    "Riflaj WPC premium coextrudat, generația a II-a, în finisaj Negru, potrivit pentru placarea fațadelor, pereților, tavanelor și gardurilor la exterior.",
-  features: [
-    "Dimensiuni: 2900 × 220 × 26 mm",
-    "Culoare: Negru",
-    "Generația II – Coextrudat",
-    "Textură premium",
-    "Rezistență ridicată la UV",
-    "Rezistență la umezeală și intemperii",
-    "Întreținere redusă",
-    "Potrivit pentru fațade, pereți, tavane și garduri",
-  ],
-},
+
+  {
+    title: "Riflaj WPC Coextrudat – NEGRU",
+    slug: "riflaj-wpc-coextrudat-negru",
+    category: "riflaje-exterior",
+    image: "/p20.jpg",
+    images: ["/p20.jpg"],
+    badge: "Nou",
+    short:
+      "Riflaj WPC premium coextrudat, generația a II-a, în finisaj Negru, potrivit pentru placarea fațadelor, pereților, tavanelor și gardurilor la exterior.",
+    features: [
+      "Dimensiuni: 2900 × 220 × 26 mm",
+      "Culoare: Negru",
+      "Generația II – Coextrudat",
+      "Textură premium",
+      "Rezistență ridicată la UV",
+      "Rezistență la umezeală și intemperii",
+      "Întreținere redusă",
+      "Potrivit pentru fațade, pereți, tavane și garduri",
+    ],
+  },
+
   {
     title: "Riflaj WPC Coextrudat – Walnut Color",
     slug: "riflaj-wpc-coextrudat-walnut-color",
