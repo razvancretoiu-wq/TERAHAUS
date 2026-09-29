@@ -41,7 +41,7 @@ export default function Header() {
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-          
+
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image
@@ -59,12 +59,11 @@ export default function Header() {
             <Link href="/produse" className="hover:text-black transition">
               Produse
             </Link>
-            <Link href="/proiecte" className="hover:text-black transition">
-              Proiecte
-            </Link>
+
             <Link href="/despre" className="hover:text-black transition">
               Despre
             </Link>
+
             <Link href="/contact" className="hover:text-black transition">
               Contact
             </Link>
@@ -93,7 +92,7 @@ export default function Header() {
 
           {/* Slide Menu */}
           <div className="absolute right-0 top-0 h-full w-80 bg-white shadow-xl p-8 flex flex-col">
-            
+
             <button
               className="self-end text-xl mb-8"
               onClick={() => setOpen(false)}
@@ -103,7 +102,6 @@ export default function Header() {
 
             <nav className="flex flex-col gap-6 text-lg uppercase tracking-wider">
               <Link href="/produse">Produse</Link>
-              <Link href="/proiecte">Proiecte</Link>
               <Link href="/despre">Despre</Link>
               <Link href="/contact">Contact</Link>
             </nav>
