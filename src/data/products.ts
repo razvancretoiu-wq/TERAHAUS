@@ -365,6 +365,8 @@ export const products: Product[] = [
       "Potrivită pentru pereți și tavane",
     ],
   },
+    // RIFLAJE INTERIOR
+
   {
     title: "Riflaj WPC Premium – Stejar Noir",
     slug: "riflaj-wpc-stejar-noir",
@@ -382,16 +384,19 @@ export const products: Product[] = [
   },
 
   {
-    title: "Riflaj WPC Premium – Pearl White",
-    slug: "riflaj-wpc-pearl-white",
+    title: "Riflaj WPC Premium – Sonoma Waves",
+    slug: "riflaj-wpc-premium-sonoma-waves",
     category: "riflaje-interior",
-    image: "/p2.jpg",
-    images: ["/p2.jpg", "/p2-2.jpg"],
-    badge: "Popular",
+    image: "/p26.jpg",
+    images: ["/p26.jpg"],
+    badge: "Nou",
     short:
-      "Riflaj WPC premium, cu finisaj Pearl White, ideal pentru interioare luminoase, moderne și elegante.",
+      "Riflaj WPC premium Sonoma Waves, cu design modern și finisaj decorativ elegant, potrivit pentru placarea pereților și tavanelor la interior.",
     features: [
-      "Dimensiuni: 2900 × 168 × 24 mm",
+      "Dimensiuni: 2900 × 170 × 15 mm",
+      "Finisaj: Sonoma Waves",
+      "Utilizare: interior",
+      "Potrivit pentru pereți și tavane",
       "Întreținere ușoară",
       "Montaj rapid",
     ],
@@ -406,6 +411,60 @@ export const products: Product[] = [
     badge: "Popular",
     short:
       "Riflaj WPC premium, cu aspect Grey Oak, potrivit pentru pereți decorativi și tavane interioare.",
+    features: [
+      "Dimensiuni: 2900 × 168 × 24 mm",
+      "Întreținere ușoară",
+      "Montaj rapid",
+    ],
+  },
+
+  {
+    title: "Riflaj WPC Premium – Sonoma Pin",
+    slug: "riflaj-wpc-premium-sonoma-pin",
+    category: "riflaje-interior",
+    image: "/p27.jpg",
+    images: ["/p27.jpg"],
+    badge: "Nou",
+    short:
+      "Riflaj WPC premium Sonoma Pin, cu aspect cald inspirat de lemnul natural, ideal pentru amenajarea pereților și tavanelor la interior.",
+    features: [
+      "Dimensiuni: 2900 × 168 × 24 mm",
+      "Finisaj: Sonoma Pin",
+      "Utilizare: interior",
+      "Potrivit pentru pereți și tavane",
+      "Întreținere ușoară",
+      "Montaj rapid",
+    ],
+  },
+
+  {
+    title: "Riflaj WPC Premium – Stejar Waves",
+    slug: "riflaj-wpc-premium-stejar-waves",
+    category: "riflaje-interior",
+    image: "/p28.jpg",
+    images: ["/p28.jpg"],
+    badge: "Nou",
+    short:
+      "Riflaj WPC premium Stejar Waves, cu finisaj decorativ inspirat de lemnul de stejar, potrivit pentru amenajarea pereților și tavanelor la interior.",
+    features: [
+      "Dimensiuni: 2900 × 170 × 15 mm",
+      "Finisaj: Stejar Waves",
+      "Utilizare: interior",
+      "Potrivit pentru pereți și tavane",
+      "Întreținere ușoară",
+      "Montaj rapid",
+    ],
+  },
+
+  {
+    title: "Riflaj WPC Premium – Pearl White",
+    slug: "riflaj-wpc-pearl-white",
+    category: "riflaje-interior",
+    image: "/p2.jpg",
+    images: ["/p2.jpg", "/p2-2.jpg"],
+    badge: "Popular",
+    short:
+      "Riflaj WPC premium, cu finisaj Pearl White, ideal pentru interioare luminoase, moderne și elegante.",
     features: [
       "Dimensiuni: 2900 × 168 × 24 mm",
       "Întreținere ușoară",

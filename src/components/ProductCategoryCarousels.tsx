@@ -18,16 +18,16 @@ const sections = [
     category: "piatra-flexibila",
   },
   {
+    title: "Riflaje Interior",
+    category: "riflaje-interior",
+  },
+  {
     title: "Panouri Decorative",
     category: "panouri-decorative",
   },
   {
     title: "Accesorii",
     category: "accesorii",
-  },
-  {
-    title: "Riflaje Interior",
-    category: "riflaje-interior",
   },
 ] as const
 
@@ -41,8 +41,6 @@ export default function ProductCategoryCarousels() {
               product.category === section.category &&
               product.active !== false
           )
-
-          const isInterior = section.category === "riflaje-interior"
 
           if (!items.length) return null
 
@@ -66,30 +64,6 @@ export default function ProductCategoryCarousels() {
                   Vezi toate
                 </Link>
               </div>
-
-              {isInterior && (
-                <div className="mb-8 flex flex-col gap-5 rounded-2xl border border-neutral-200 bg-neutral-50 px-5 py-5 sm:flex-row sm:items-center sm:justify-between sm:px-6">
-                  <div>
-                    <p className="text-base font-semibold text-neutral-900">
-                      Riflajele de interior revin în stoc după 15 septembrie
-                    </p>
-
-                    <p className="mt-1 max-w-2xl text-sm leading-6 text-neutral-600">
-                      Poți face o rezervare în avans, iar noi te vom contacta
-                      când produsele vor fi din nou disponibile.
-                    </p>
-                  </div>
-
-                  <a
-                    href="https://wa.me/40727608654?text=Bun%C4%83%21%20Doresc%20s%C4%83%20rezerv%20riflaje%20WPC%20pentru%20interior%20care%20revin%20%C3%AEn%20stoc%20dup%C4%83%2015%20septembrie."
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex shrink-0 items-center justify-center rounded-full bg-black px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-neutral-700"
-                  >
-                    Rezervă în avans
-                  </a>
-                </div>
-              )}
 
               <div className="overflow-x-auto pb-2 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
                 <div className="flex gap-5">
