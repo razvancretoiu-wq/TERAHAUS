@@ -1,6 +1,7 @@
 export type ProductCategory =
   | "panouri-decorative"
   | "deck"
+  | "piatra-flexibila"
   | "riflaje-interior"
   | "riflaje-exterior"
   | "accesorii"
