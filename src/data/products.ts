@@ -254,7 +254,117 @@ export const products: Product[] = [
       "Rezistență la îndoire: 2654 MPa",
     ],
   },
+  // PIATRĂ FLEXIBILĂ
 
+  {
+    title: "Piatră Flexibilă – Travertin Alb Cald",
+    slug: "piatra-flexibila-travertin-alb-cald",
+    category: "piatra-flexibila",
+    image: "/p21.jpg",
+    images: ["/p21.jpg"],
+    badge: "Nou",
+    short:
+      "Piatră flexibilă decorativă pentru amenajări interioare și exterioare, potrivită pentru placarea pereților, tavanelor, fațadelor și spațiilor cu umiditate ridicată.",
+    features: [
+      "Dimensiuni: 1200 × 600 mm",
+      "Grosime: 3 mm",
+      "Greutate: 3,2 kg/m²",
+      "Utilizare: interior și exterior",
+      "Rezistentă la apă",
+      "Rezistentă UV",
+      "Potrivită pentru baie",
+      "Potrivită pentru fațade",
+      "Potrivită pentru pereți și tavane",
+    ],
+  },
+
+  {
+    title: "Piatră Flexibilă – Marble White",
+    slug: "piatra-flexibila-marble-white",
+    category: "piatra-flexibila",
+    image: "/p22.jpg",
+    images: ["/p22.jpg"],
+    badge: "Nou",
+    short:
+      "Piatră flexibilă decorativă pentru amenajări interioare și exterioare, potrivită pentru placarea pereților, tavanelor, fațadelor și spațiilor cu umiditate ridicată.",
+    features: [
+      "Dimensiuni: 1200 × 600 mm",
+      "Grosime: 4 mm",
+      "Greutate: 3,2 kg/m²",
+      "Utilizare: interior și exterior",
+      "Rezistentă la apă",
+      "Rezistentă UV",
+      "Potrivită pentru baie",
+      "Potrivită pentru fațade",
+      "Potrivită pentru pereți și tavane",
+    ],
+  },
+
+  {
+    title: "Piatră Flexibilă – Cristal Grey",
+    slug: "piatra-flexibila-cristal-grey",
+    category: "piatra-flexibila",
+    image: "/p23.jpg",
+    images: ["/p23.jpg"],
+    badge: "Nou",
+    short:
+      "Piatră flexibilă decorativă pentru amenajări interioare și exterioare, potrivită pentru placarea pereților, tavanelor, fațadelor și spațiilor cu umiditate ridicată.",
+    features: [
+      "Dimensiuni: 1200 × 600 mm",
+      "Grosime: 7 mm",
+      "Greutate: 3,2 kg/m²",
+      "Utilizare: interior și exterior",
+      "Rezistentă la apă",
+      "Rezistentă UV",
+      "Potrivită pentru baie",
+      "Potrivită pentru fațade",
+      "Potrivită pentru pereți și tavane",
+    ],
+  },
+
+  {
+    title: "Piatră Flexibilă – Travertin Antracit",
+    slug: "piatra-flexibila-travertin-antracit",
+    category: "piatra-flexibila",
+    image: "/p24.jpg",
+    images: ["/p24.jpg"],
+    badge: "Nou",
+    short:
+      "Piatră flexibilă decorativă pentru amenajări interioare și exterioare, potrivită pentru placarea pereților, tavanelor, fațadelor și spațiilor cu umiditate ridicată.",
+    features: [
+      "Dimensiuni: 1200 × 600 mm",
+      "Grosime: 3 mm",
+      "Greutate: 3,2 kg/m²",
+      "Utilizare: interior și exterior",
+      "Rezistentă la apă",
+      "Rezistentă UV",
+      "Potrivită pentru baie",
+      "Potrivită pentru fațade",
+      "Potrivită pentru pereți și tavane",
+    ],
+  },
+
+  {
+    title: "Piatră Flexibilă – Victoria White",
+    slug: "piatra-flexibila-victoria-white",
+    category: "piatra-flexibila",
+    image: "/p25.jpg",
+    images: ["/p25.jpg"],
+    badge: "Nou",
+    short:
+      "Piatră flexibilă decorativă pentru amenajări interioare și exterioare, potrivită pentru placarea pereților, tavanelor, fațadelor și spațiilor cu umiditate ridicată.",
+    features: [
+      "Dimensiuni: 1200 × 600 mm",
+      "Grosime: 4 mm",
+      "Greutate: 3,2 kg/m²",
+      "Utilizare: interior și exterior",
+      "Rezistentă la apă",
+      "Rezistentă UV",
+      "Potrivită pentru baie",
+      "Potrivită pentru fațade",
+      "Potrivită pentru pereți și tavane",
+    ],
+  },
   {
     title: "Riflaj WPC Premium – Stejar Noir",
     slug: "riflaj-wpc-stejar-noir",
