@@ -26,13 +26,16 @@ const sections = [
     category: "riflaje-interior",
   },
 ] as const
+
 export default function ProductCategoryCarousels() {
   return (
     <section className="bg-white py-20">
       <div className="mx-auto max-w-7xl space-y-20 px-6">
         {sections.map((section) => {
           const items = products.filter(
-            (product) => product.category === section.category
+            (product) =>
+              product.category === section.category &&
+              product.active !== false
           )
 
           const isInterior = section.category === "riflaje-interior"
@@ -43,7 +46,9 @@ export default function ProductCategoryCarousels() {
             <div key={section.category}>
               <div className="mb-8 flex items-end justify-between gap-4">
                 <div>
-                  <p className="text-sm text-gray-500">Categorie</p>
+                  <p className="text-sm text-gray-500">
+                    Categorie
+                  </p>
 
                   <h2 className="text-3xl font-semibold tracking-tight">
                     {section.title}
@@ -100,13 +105,13 @@ export default function ProductCategoryCarousels() {
                               alt={product.title}
                               fill
                               sizes="(max-width: 640px) 86vw, (max-width: 1024px) 48vw, 33vw"
-                            className={`transition-transform duration-700 group-hover:scale-105 ${
-  isDeck
-    ? "object-contain p-8 sm:p-10"
-    : product.category === "panouri-decorative"
-      ? "object-cover object-top"
-      : "object-cover"
-}`}
+                              className={`transition-transform duration-700 group-hover:scale-105 ${
+                                isDeck
+                                  ? "object-contain p-8 sm:p-10"
+                                  : product.category === "panouri-decorative"
+                                    ? "object-cover object-top"
+                                    : "object-cover"
+                              }`}
                             />
 
                             {product.badge && (

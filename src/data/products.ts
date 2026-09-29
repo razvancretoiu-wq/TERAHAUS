@@ -14,15 +14,17 @@ export type Product = {
   badge?: string
   short?: string
   features?: string[]
+  active?: boolean
 }
 
 export const products: Product[] = [
- {
+  {
     title: "Panou Decorativ Premium – Nuc Greenwood",
     slug: "panou-decorativ-premium-nuc-greenwood",
     category: "panouri-decorative",
     image: "/p19.jpg",
     images: ["/p19.jpg"],
+    active: false,
     badge: "Premium",
     short:
       "Panou decorativ premium din WPC, cu finisaj Nuc Greenwood și aspect cald de lemn natural. Este ideal pentru amenajarea pereților de accent din living, dormitor, hol, birou, hotel sau spații comerciale.",
@@ -42,12 +44,14 @@ export const products: Product[] = [
       "Accesorii și profile decorative disponibile",
     ],
   },
- {
+
+  {
     title: "Panou Decorativ Premium – Imitație Marmură",
     slug: "panou-decorativ-premium-imitatie-marmura",
     category: "panouri-decorative",
     image: "/p18.jpg",
     images: ["/p18.jpg"],
+    active: false,
     badge: "Popular",
     short:
       "Panou decorativ premium din WPC, cu finisaj inspirat de marmura naturală. Oferă un aspect elegant și rafinat și este potrivit pentru pereți de accent, băi, bucătării, livinguri, recepții, hoteluri și spații comerciale.",
@@ -67,7 +71,8 @@ export const products: Product[] = [
       "Accesorii și profile decorative disponibile",
     ],
   },
- {
+
+  {
     title: "Panou Decorativ Premium – Gri Antracit",
     slug: "panou-decorativ-premium-gri-antracit",
     category: "panouri-decorative",
@@ -92,6 +97,7 @@ export const products: Product[] = [
       "Accesorii și profile decorative disponibile",
     ],
   },
+
   {
     title: "Panou Decorativ Premium – Alb",
     slug: "panou-decorativ-premium-alb",
@@ -117,6 +123,7 @@ export const products: Product[] = [
       "Accesorii și profile decorative disponibile",
     ],
   },
+
   {
     title: "Panou Decorativ Premium – Imitație Piatră",
     slug: "panou-decorativ-premium-imitatie-piatra",
@@ -142,12 +149,14 @@ export const products: Product[] = [
       "Accesorii și profile decorative disponibile",
     ],
   },
+
   {
     title: "Panou Decorativ Premium – Imitație Țesătură",
     slug: "panou-decorativ-premium-imitatie-tesatura",
     category: "panouri-decorative",
     image: "/p16.jpg",
     images: ["/p16.jpg"],
+    active: false,
     badge: "Premium",
     short:
       "Panou decorativ premium din WPC, cu finisaj care imită textura unei țesături elegante. Creează o atmosferă sofisticată și confortabilă, potrivită pentru dormitoare, livinguri, birouri, hoteluri și spații comerciale.",
@@ -167,7 +176,7 @@ export const products: Product[] = [
       "Accesorii și profile decorative disponibile",
     ],
   },
- 
+
   {
     title:
       "Placă Deck Lemn Compozit (WPC) Coffee Brown – 146 × 25 × 2900 mm",
@@ -192,6 +201,7 @@ export const products: Product[] = [
       "Rezistență la îndoire: 2654 MPa",
     ],
   },
+
   {
     title:
       "Placă Deck Lemn Compozit (WPC) Light Gray – 146 × 25 × 2900 mm",
@@ -216,6 +226,7 @@ export const products: Product[] = [
       "Rezistență la îndoire: 2654 MPa",
     ],
   },
+
   {
     title:
       "Placă Deck WPC Coextrudat Gen. II Walnut Color – 150 × 22 × 2900 mm",
@@ -239,6 +250,7 @@ export const products: Product[] = [
       "Ideal pentru terase, piscine, alei, balcoane și foișoare",
     ],
   },
+
   {
     title: "Riflaj WPC Premium – Stejar Noir",
     slug: "riflaj-wpc-stejar-noir",
@@ -254,6 +266,7 @@ export const products: Product[] = [
       "Montaj rapid",
     ],
   },
+
   {
     title: "Riflaj WPC Premium – Pearl White",
     slug: "riflaj-wpc-pearl-white",
@@ -269,6 +282,7 @@ export const products: Product[] = [
       "Montaj rapid",
     ],
   },
+
   {
     title: "Riflaj WPC Premium – Grey Oak",
     slug: "riflaj-wpc-grey-oak",
@@ -284,6 +298,7 @@ export const products: Product[] = [
       "Montaj rapid",
     ],
   },
+
   {
     title: "Riflaj WPC Coextrudat – Walnut Color",
     slug: "riflaj-wpc-coextrudat-walnut-color",
@@ -298,6 +313,7 @@ export const products: Product[] = [
       "Rezistență UV",
     ],
   },
+
   {
     title: "Riflaj WPC Coextrudat – Blue Gray",
     slug: "riflaj-wpc-coextrudat-blue-gray",
@@ -312,6 +328,7 @@ export const products: Product[] = [
       "Rezistență UV",
     ],
   },
+
   {
     title: "Riflaj WPC – Coffee Brown",
     slug: "riflaj-wpc-coffee-brown",
@@ -326,6 +343,7 @@ export const products: Product[] = [
       "Rezistență UV",
     ],
   },
+
   {
     title: "Riflaj WPC – Light Gray",
     slug: "riflaj-wpc-light-gray",
@@ -340,6 +358,7 @@ export const products: Product[] = [
       "Rezistență UV",
     ],
   },
+
   {
     title: "Profil Colțar – Pearl White",
     slug: "profil-coltar-pearl-white",
@@ -354,6 +373,7 @@ export const products: Product[] = [
       "Durabilitate",
     ],
   },
+
   {
     title: "Profil Colțar – Stejar Noir",
     slug: "profil-coltar-stejar-noir",
@@ -368,6 +388,7 @@ export const products: Product[] = [
       "Durabilitate",
     ],
   },
+
   {
     title: "Profil Colțar – Grey Oak",
     slug: "profil-coltar-grey-oak",

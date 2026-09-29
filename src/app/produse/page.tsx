@@ -61,16 +61,26 @@ export default async function ProdusePage({
     ? (cat as ProductCategory)
     : undefined
 
+  // Eliminăm produsele inactive
+  const activeProducts = products.filter(
+    (product) => product.active !== false
+  )
+
+  // Filtrăm apoi după categoria selectată
   const filtered = active
-    ? products.filter((product) => product.category === active)
-    : products
+    ? activeProducts.filter(
+        (product) => product.category === active
+      )
+    : activeProducts
 
   return (
     <main className="bg-white pb-20 pt-32">
       <div className="mx-auto max-w-7xl px-6">
         <div className="mb-10 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
           <div>
-            <p className="text-sm text-gray-500">Catalog</p>
+            <p className="text-sm text-gray-500">
+              Catalog
+            </p>
 
             <h1 className="heading-serif mt-2 text-4xl font-semibold md:text-5xl">
               Produse
@@ -95,7 +105,8 @@ export default async function ProdusePage({
         <div className="mb-10 flex flex-wrap gap-2">
           {categories.map((category) => {
             const isActive =
-              (!category.key && !active) || category.key === active
+              (!category.key && !active) ||
+              category.key === active
 
             return (
               <Link
