@@ -10,12 +10,16 @@ const sections = [
     category: "riflaje-exterior",
   },
   {
-    title: "Panouri Decorative",
-    category: "panouri-decorative",
-  },
-  {
     title: "Deck WPC",
     category: "deck",
+  },
+  {
+    title: "Piatră Flexibilă",
+    category: "piatra-flexibila",
+  },
+  {
+    title: "Panouri Decorative",
+    category: "panouri-decorative",
   },
   {
     title: "Accesorii",
@@ -107,7 +111,7 @@ export default function ProductCategoryCarousels() {
                               sizes="(max-width: 640px) 86vw, (max-width: 1024px) 48vw, 33vw"
                               className={`transition-transform duration-700 group-hover:scale-105 ${
                                 isDeck
-                                   ? "object-cover"
+                                  ? "object-cover"
                                   : product.category === "panouri-decorative"
                                     ? "object-cover object-top"
                                     : "object-cover"

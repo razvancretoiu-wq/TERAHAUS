@@ -15,9 +15,9 @@ const categories: {
     href: "/produse",
   },
   {
-    key: "panouri-decorative",
-    label: "Panouri Decorative",
-    href: "/produse?cat=panouri-decorative",
+    key: "riflaje-exterior",
+    label: "Riflaje Exterior",
+    href: "/produse?cat=riflaje-exterior",
   },
   {
     key: "deck",
@@ -25,9 +25,14 @@ const categories: {
     href: "/produse?cat=deck",
   },
   {
-    key: "riflaje-exterior",
-    label: "Riflaje Exterior",
-    href: "/produse?cat=riflaje-exterior",
+    key: "piatra-flexibila",
+    label: "Piatră Flexibilă",
+    href: "/produse?cat=piatra-flexibila",
+  },
+  {
+    key: "panouri-decorative",
+    label: "Panouri Decorative",
+    href: "/produse?cat=panouri-decorative",
   },
   {
     key: "accesorii",
@@ -44,6 +49,7 @@ const categories: {
 const categoryLabel: Record<ProductCategory, string> = {
   "panouri-decorative": "Panouri Decorative",
   deck: "Deck WPC",
+  "piatra-flexibila": "Piatră Flexibilă",
   "riflaje-interior": "Riflaje Interior",
   "riflaje-exterior": "Riflaje Exterior",
   accesorii: "Accesorii",
@@ -61,12 +67,10 @@ export default async function ProdusePage({
     ? (cat as ProductCategory)
     : undefined
 
-  // Eliminăm produsele inactive
   const activeProducts = products.filter(
     (product) => product.active !== false
   )
 
-  // Filtrăm apoi după categoria selectată
   const filtered = active
     ? activeProducts.filter(
         (product) => product.category === active
@@ -93,7 +97,7 @@ export default async function ProdusePage({
           </div>
 
           <a
-            href="https://wa.me/40727608654?text=Bun%C4%83!%20A%C8%99%20dori%20o%20ofert%C4%83%20pentru%20produse%20WPC."
+            href="https://wa.me/40727608654?text=Bun%C4%83!%20A%C8%99%20dori%20o%20ofert%C4%83%20pentru%20produsele%20TERAHAUS."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-full bg-[#C8732D] px-6 py-3 text-sm uppercase tracking-wider text-white shadow-sm transition hover:bg-[#B96524]"

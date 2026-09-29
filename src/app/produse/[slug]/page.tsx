@@ -6,6 +6,7 @@ import { products } from "@/data/products"
 const categoryLabel: Record<string, string> = {
   "panouri-decorative": "Panouri Decorative",
   deck: "Deck WPC",
+  "piatra-flexibila": "Piatră Flexibilă",
   "riflaje-interior": "Riflaje Interior",
   "riflaje-exterior": "Riflaje Exterior",
   accesorii: "Accesorii",
@@ -18,7 +19,9 @@ export default async function ProductPage({
 }) {
   const { slug } = await params
 
-  const product = products.find((p) => p.slug === slug)
+  const product = products.find(
+    (p) => p.slug === slug && p.active !== false
+  )
 
   if (!product) return notFound()
 
@@ -30,7 +33,8 @@ export default async function ProductPage({
     .filter(
       (p) =>
         p.category === product.category &&
-        p.slug !== product.slug
+        p.slug !== product.slug &&
+        p.active !== false
     )
     .slice(0, 4)
 
@@ -38,6 +42,9 @@ export default async function ProductPage({
     product.category === "panouri-decorative"
 
   const isDeck = product.category === "deck"
+
+  const isFlexibleStone =
+    product.category === "piatra-flexibila"
 
   return (
     <main className="bg-white pb-20 pt-32">
@@ -83,11 +90,9 @@ export default async function ProductPage({
                   priority={index === 0}
                   sizes="(max-width: 768px) 100vw, 60vw"
                   className={`rounded-2xl ${
-                    isDeck
-                      ? "object-contain p-8 sm:p-10"
-                      : isDecorativePanel
-                        ? "object-cover object-top"
-                        : "object-cover"
+                    isDecorativePanel
+                      ? "object-cover object-top"
+                      : "object-cover"
                   }`}
                 />
 
@@ -120,12 +125,57 @@ export default async function ProductPage({
                 {product.features.map((feature) => (
                   <li key={feature} className="flex gap-2">
                     <span className="mt-[6px] inline-block h-2 w-2 shrink-0 rounded-full bg-black" />
-
                     <span>{feature}</span>
                   </li>
                 ))}
               </ul>
             ) : null}
+
+            {isFlexibleStone && (
+              <div className="mt-8 rounded-2xl border border-neutral-200 bg-neutral-50 p-5 sm:p-6">
+                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-gray-500">
+                  Montaj recomandat
+                </p>
+
+                <h2 className="mt-2 text-lg font-semibold text-neutral-900">
+                  Adeziv special pentru piatră flexibilă
+                </h2>
+
+                <p className="mt-2 text-sm leading-relaxed text-gray-600">
+                  Pentru montaj recomandăm utilizarea adezivului special
+                  destinat pietrei flexibile.
+                </p>
+
+                <div className="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-3">
+                  <div className="rounded-xl bg-white p-4">
+                    <p className="text-xs text-gray-500">
+                      Ambalaj
+                    </p>
+                    <p className="mt-1 font-semibold">
+                      35 kg
+                    </p>
+                  </div>
+
+                  <div className="rounded-xl bg-white p-4">
+                    <p className="text-xs text-gray-500">
+                      Acoperire
+                    </p>
+                    <p className="mt-1 font-semibold">
+                      10–14 m²
+                    </p>
+                  </div>
+
+                  <div className="rounded-xl bg-white p-4">
+                    <p className="text-xs text-gray-500">
+                      Preț
+                    </p>
+                    <p className="mt-1 font-semibold">
+                      310 lei
+                    </p>
+                  </div>
+                </div>
+              </div>
+            )}
 
             <div className="mt-8 flex flex-wrap gap-3">
               <a
@@ -166,9 +216,6 @@ export default async function ProductPage({
 
             <div className="mt-8 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
               {related.map((relatedProduct) => {
-                const isRelatedDeck =
-                  relatedProduct.category === "deck"
-
                 const isRelatedDecorativePanel =
                   relatedProduct.category ===
                   "panouri-decorative"
@@ -187,11 +234,9 @@ export default async function ProductPage({
                           fill
                           sizes="(max-width: 768px) 100vw, 25vw"
                           className={`rounded-2xl transition-transform duration-700 group-hover:scale-105 ${
-                            isRelatedDeck
-                              ? "object-contain p-6"
-                              : isRelatedDecorativePanel
-                                ? "object-cover object-top"
-                                : "object-cover"
+                            isRelatedDecorativePanel
+                              ? "object-cover object-top"
+                              : "object-cover"
                           }`}
                         />
                       </div>
