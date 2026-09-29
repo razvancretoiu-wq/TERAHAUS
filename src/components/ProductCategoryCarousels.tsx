@@ -6,16 +6,16 @@ import { products } from "@/data/products"
 
 const sections = [
   {
+    title: "Riflaje Exterior",
+    category: "riflaje-exterior",
+  },
+  {
     title: "Panouri Decorative",
     category: "panouri-decorative",
   },
   {
     title: "Deck WPC",
     category: "deck",
-  },
-  {
-    title: "Riflaje Exterior",
-    category: "riflaje-exterior",
   },
   {
     title: "Accesorii",

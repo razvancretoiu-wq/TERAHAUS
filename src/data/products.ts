@@ -298,7 +298,26 @@ export const products: Product[] = [
       "Montaj rapid",
     ],
   },
-
+{
+  title: "Riflaj WPC Coextrudat – NEGRU",
+  slug: "riflaj-wpc-coextrudat-negru",
+  category: "riflaje-exterior",
+  image: "/p20.jpg",
+  images: ["/p20.jpg"],
+  badge: "Nou",
+  short:
+    "Riflaj WPC premium coextrudat, generația a II-a, în finisaj Negru, potrivit pentru placarea fațadelor, pereților, tavanelor și gardurilor la exterior.",
+  features: [
+    "Dimensiuni: 2900 × 220 × 26 mm",
+    "Culoare: Negru",
+    "Generația II – Coextrudat",
+    "Textură premium",
+    "Rezistență ridicată la UV",
+    "Rezistență la umezeală și intemperii",
+    "Întreținere redusă",
+    "Potrivit pentru fațade, pereți, tavane și garduri",
+  ],
+},
   {
     title: "Riflaj WPC Coextrudat – Walnut Color",
     slug: "riflaj-wpc-coextrudat-walnut-color",
