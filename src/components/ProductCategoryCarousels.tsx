@@ -21,10 +21,7 @@ const sections = [
     title: "Riflaje Interior",
     category: "riflaje-interior",
   },
-  {
-    title: "Panouri Decorative",
-    category: "panouri-decorative",
-  },
+
   {
     title: "Accesorii",
     category: "accesorii",

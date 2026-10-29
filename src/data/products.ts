@@ -79,6 +79,7 @@ export const products: Product[] = [
     category: "panouri-decorative",
     image: "/p17.jpg",
     images: ["/p17.jpg"],
+    active: false,
     badge: "Premium",
     short:
       "Panou decorativ premium din WPC, în nuanță gri antracit, ideal pentru amenajări moderne, minimaliste sau industriale. Poate fi utilizat pentru placarea pereților și tavanelor în spații rezidențiale și comerciale.",
@@ -105,6 +106,7 @@ export const products: Product[] = [
     category: "panouri-decorative",
     image: "/p14.jpg",
     images: ["/p14.jpg"],
+    active: false,
     badge: "Premium",
     short:
       "Panou decorativ premium din WPC, cu finisaj alb, luminos și minimalist. Este ideal pentru transformarea rapidă a pereților și tavanelor din living, dormitor, hol, baie, bucătărie, birou sau spații comerciale.",
@@ -131,6 +133,7 @@ export const products: Product[] = [
     category: "panouri-decorative",
     image: "/p15.jpg",
     images: ["/p15.jpg"],
+    active: false,
     badge: "Premium",
     short:
       "Panou decorativ premium din WPC, cu finisaj inspirat de piatra naturală. Oferă pereților un aspect elegant și modern și este potrivit pentru pereți de accent, recepții, livinguri, holuri, băi, bucătării și spații comerciale.",
